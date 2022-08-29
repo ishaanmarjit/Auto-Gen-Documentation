@@ -1,0 +1,480 @@
+\hypertarget{_web_2_program_8cs}{}\doxysection{C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Web/\+Program.cs File Reference}
+\label{_web_2_program_8cs}\index{C:/Users/ishaan\_marjit/Desktop/Maverick/Dev Prod/eShopOnWeb/src/Web/Program.cs@{C:/Users/ishaan\_marjit/Desktop/Maverick/Dev Prod/eShopOnWeb/src/Web/Program.cs}}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{_web_2_program_8cs_af63968aa0f0ba6e50d966543a7c28c79}{scope}} = app.\+Services.\+Create\+Scope()) \{ var scoped\+Provider=scope.\+Service\+Provider
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+builder.\+Logging. \mbox{\hyperlink{_web_2_program_8cs_a1ba609cb4a4670a98cc74676ee21e91b}{Add\+Console}} ()
+\item 
+Microsoft.\+e\+Shop\+Web.\+Infrastructure.\+Dependencies. \mbox{\hyperlink{_web_2_program_8cs_ae24852b692e609d1ad44193ff5c8f0eb}{Configure\+Services}} (builder.\+Configuration, builder.\+Services)
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a5731ab2cbe8f4ea13068b4cb0554fe15}{Add\+Cookie\+Settings}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a9e515a27bc8d2c3d2fb6fbdb46c5f470}{Add\+Authentication}} (Cookie\+Authentication\+Defaults.\+Authentication\+Scheme) .Add\+Cookie(options
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a0f34aea549e21bc2449cd56fc11d4918}{Add\+Identity$<$ Application\+User, Identity\+Role $>$}} () .Add\+Default\+UI() .Add\+Entity\+Framework\+Stores$<$ \mbox{\hyperlink{class_app_identity_db_context}{App\+Identity\+Db\+Context}} $>$() .Add\+Default\+Token\+Providers()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_ab25f8718018adaae9d7e444ba7d219be}{Add\+Scoped$<$ IToken\+Claims\+Service, Identity\+Token\+Claim\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a1fb8614294a329e35532b8b90c221f38}{Add\+Core\+Services}} (builder.\+Configuration)
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a054a65edd03b935002a277ac6a4c5402}{Add\+Web\+Services}} (builder.\+Configuration)
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a937999ccf5bd85f696d3e3da745be7f1}{Add\+Memory\+Cache}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a80a1c39ba38fab0c4ec132a9b1611fea}{Add\+Routing}} (options=$>$ \{ options.\+Constraint\+Map\mbox{[}\char`\"{}slugify\char`\"{}\mbox{]}=typeof(\mbox{\hyperlink{class_slugify_parameter_transformer}{Slugify\+Parameter\+Transformer}});\})
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a5ba852ef84a8f3504d9526c235182960}{Add\+Mvc}} (options=$>$ \{ options.\+Conventions.\+Add(new Route\+Token\+Transformer\+Convention(new \mbox{\hyperlink{class_slugify_parameter_transformer}{Slugify\+Parameter\+Transformer}}()));\})
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_af8107f2f8ff8e8de22a684c8c8ad3e99}{Add\+Controllers\+With\+Views}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a0875755fa5677fec2c61fcef6f750697}{Add\+Razor\+Pages}} (options=$>$ \{ options.\+Conventions.\+Authorize\+Page(\char`\"{}/Basket/Checkout\char`\"{});\})
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a0651b1cc6b2ec2a500b3fbaaaba6ac6c}{Add\+Http\+Context\+Accessor}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_aba9bfa76d3ea994f91c5c2e2fa90675f}{Add\+Health\+Checks}} () .Add\+Check$<$ \mbox{\hyperlink{class_api_health_check}{Api\+Health\+Check}} $>$(\char`\"{}api\+\_\+health\+\_\+check\char`\"{}
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_abbdce942082b471b81037ef7be34c2d8}{Configure$<$ Service\+Config $>$}} (config=$>$ \{ config.\+Services=new \mbox{\hyperlink{class_list}{List}}$<$ Service\+Descriptor $>$(builder.\+Services);config.\+Path=\char`\"{}/allservices\char`\"{};\})
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a460fcb7d54145998a6b589405158a210}{Configure$<$ Base\+Url\+Configuration $>$}} (\mbox{\hyperlink{_web_2_program_8cs_ae063a800c5169551897af812fca8ce13}{config\+Section}})
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a49b425c1e706e50a7eca0c8d95e96675}{Add\+Scoped$<$ Http\+Client $>$}} (s=$>$ new Http\+Client \{ Base\+Address=new Uri(base\+Url\+Config.\+Web\+Base) \})
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a123e39cc7c9ef6e668dea1e793557dd0}{Add\+Blazored\+Local\+Storage}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_abda56024f5b832bc28b5198cc50fbf0f}{Add\+Server\+Side\+Blazor}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_ae0bda9a28d9514307e12285c94e0a6cd}{Add\+Scoped$<$ Toast\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_afd563e5d58c7739bb13d956808c697c2}{Add\+Scoped$<$ Http\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_a058d9461ee3382ad01868a23374242c3}{Add\+Blazor\+Services}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_ae9ee4e6d7ca0f73335732ae4a52064d2}{Add\+Database\+Developer\+Page\+Exception\+Filter}} ()
+\item 
+app.\+Logger. \mbox{\hyperlink{_web_2_program_8cs_a4ff6dd1a749a1553137b2bfe7ef62663}{Log\+Information}} (\char`\"{}App created...\char`\"{})
+\item 
+app.\+Logger. \mbox{\hyperlink{_web_2_program_8cs_a20154bba8565afea10fc3637fa6cc90b}{Log\+Information}} (\char`\"{}Seeding Database...\char`\"{})
+\item 
+await Catalog\+Context\+Seed. \mbox{\hyperlink{_web_2_program_8cs_a1469db3d9ada93d39a0fcb314b0ba3c6}{Seed\+Async}} (catalog\+Context, app.\+Logger)
+\item 
+await App\+Identity\+Db\+Context\+Seed. \mbox{\hyperlink{_web_2_program_8cs_a8ac678d19a3725b90bf803fef2cce44f}{Seed\+Async}} (\mbox{\hyperlink{_web_2_program_8cs_a33853341d8fa47c095f8eb552389b4ac}{identity\+Context}}, \mbox{\hyperlink{_web_2_program_8cs_a443194c44226acee0d9a385208c6bc36}{user\+Manager}}, \mbox{\hyperlink{_web_2_program_8cs_a626f568cbfb4bffcd264309162e2608b}{role\+Manager}})
+\item 
+\mbox{\hyperlink{_web_2_program_8cs_ab43e01d035a27754dae62444a59b3cab}{catch}} (Exception ex)
+\item 
+\mbox{\hyperlink{_web_2_program_8cs_af112c5d9884ded705d6b51f55754d940}{if}} (!string.\+Is\+Null\+Or\+Empty(\mbox{\hyperlink{_web_2_program_8cs_a1fb13c2cb512ffb376fc780e98bc5853}{catalog\+Base\+Url}}))
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_ae6884a129b12416e0f18ce032290780c}{Use\+Health\+Checks}} (\char`\"{}/health\char`\"{}, new Health\+Check\+Options \{ Response\+Writer=async(context, report)=$>$ \{ var result=new \{ status=report.\+Status.\+To\+String(), errors=report.\+Entries.\+Select(e=$>$ new \{ \mbox{\hyperlink{_public_api_2_program_8cs_a9bbe78e9381a5fe38011c4fa0f948854}{key}}=e.\+Key, value=Enum.\+Get\+Name(typeof(Health\+Status), e.\+Value.\+Status) \}) \}.To\+Json();context.\+Response.\+Content\+Type=Media\+Type\+Names.\+Application.\+Json;await context.\+Response.\+Write\+Async(result);\} \})
+\item 
+\mbox{\hyperlink{_web_2_program_8cs_aa0532817e438f2a0ef9c2b696807ebe1}{if}} (app.\+Environment.\+Is\+Development()$\vert$$\vert$app.\+Environment.\+Environment\+Name==\char`\"{}Docker\char`\"{})
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_a4f2d277735c6c2ba1628e609648e3099}{Use\+Exception\+Handler}} (\char`\"{}/Error\char`\"{})
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_a8c2c34f600427906d008e9ce976831ec}{Use\+Hsts}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_aa4d447fc3129a3aa301d736b8bd04ae9}{Use\+Https\+Redirection}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_aed1efa704e60214c06e980909b57ee78}{Use\+Blazor\+Framework\+Files}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_a906a3ce545279a7a73941f1d7b64d7cf}{Use\+Static\+Files}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_a94c810d266751293a2d511a720a5625f}{Use\+Routing}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_adbb30d5ce66f0c1350a8079f60a0eeab}{Use\+Cookie\+Policy}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_a6435d8beeff4999dc0b0c6d60a86a4e2}{Use\+Authentication}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_af6f72d752b2e73aa0292f74bd13237ab}{Use\+Authorization}} ()
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_a1ef00ae788678660119ce7af3699c2c4}{Use\+Endpoints}} (endpoints=$>$ \{ endpoints.\+Map\+Controller\+Route(\char`\"{}default\char`\"{}, \char`\"{}\{controller\+:slugify=Home\}/\{action\+:slugify=Index\}/\{id?\}\char`\"{});endpoints.\+Map\+Razor\+Pages();endpoints.\+Map\+Health\+Checks(\char`\"{}home\+\_\+page\+\_\+health\+\_\+check\char`\"{}, new Health\+Check\+Options \{ Predicate=check=$>$ check.\+Tags.\+Contains(\char`\"{}home\+Page\+Health\+Check\char`\"{}) \});endpoints.\+Map\+Health\+Checks(\char`\"{}api\+\_\+health\+\_\+check\char`\"{}, new Health\+Check\+Options \{ Predicate=check=$>$ check.\+Tags.\+Contains(\char`\"{}api\+Health\+Check\char`\"{}) \});endpoints.\+Map\+Fallback\+To\+File(\char`\"{}index.\+html\char`\"{});\})
+\item 
+app.\+Logger. \mbox{\hyperlink{_web_2_program_8cs_a93e90d0c50ee69be6567bf33ec0d857d}{Log\+Information}} (\char`\"{}LAUNCHING\char`\"{})
+\item 
+app. \mbox{\hyperlink{_web_2_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}{Run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} = Web\+Application.\+Create\+Builder(args)
+\item 
+builder.\+Services. \mbox{\hyperlink{_web_2_program_8cs_ad184468608e5798dbf1dae7de5e0ee8d}{tags}}
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_ae063a800c5169551897af812fca8ce13}{config\+Section}} = builder.\+Configuration.\+Get\+Required\+Section(\mbox{\hyperlink{class_base_url_configuration_a2bb7c2b3bcbe49d697daaa8b38e32f04}{Base\+Url\+Configuration.\+CONFIG\+\_\+\+NAME}})
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_aeea6042fb3715e7ed16f02780a094388}{base\+Url\+Config}} = config\+Section.\+Get$<$\mbox{\hyperlink{class_base_url_configuration}{Base\+Url\+Configuration}}$>$()
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}} = \mbox{\hyperlink{_blazor_admin_2_program_8cs_a103eab9352a5901779f62f6c98b53f7b}{builder.\+Build}}()
+\item 
+\mbox{\hyperlink{_web_2_program_8cs_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_a443194c44226acee0d9a385208c6bc36}{user\+Manager}} = scoped\+Provider.\+Get\+Required\+Service$<$User\+Manager$<$\mbox{\hyperlink{class_application_user}{Application\+User}}$>$$>$()
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_a626f568cbfb4bffcd264309162e2608b}{role\+Manager}} = scoped\+Provider.\+Get\+Required\+Service$<$Role\+Manager$<$Identity\+Role$>$$>$()
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_a33853341d8fa47c095f8eb552389b4ac}{identity\+Context}} = scoped\+Provider.\+Get\+Required\+Service$<$\mbox{\hyperlink{class_app_identity_db_context}{App\+Identity\+Db\+Context}}$>$()
+\item 
+var \mbox{\hyperlink{_web_2_program_8cs_a1fb13c2cb512ffb376fc780e98bc5853}{catalog\+Base\+Url}} = builder.\+Configuration.\+Get\+Value(typeof(string), \char`\"{}Catalog\+Base\+Url\char`\"{}) as string
+\item 
+\mbox{\hyperlink{_web_2_program_8cs_a0544c3fe466e421738dae463968b70ba}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_web_2_program_8cs_af63968aa0f0ba6e50d966543a7c28c79}\label{_web_2_program_8cs_af63968aa0f0ba6e50d966543a7c28c79}} 
+\index{Program.cs@{Program.cs}!scope@{scope}}
+\index{scope@{scope}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_public_api_2_program_8cs_af63968aa0f0ba6e50d966543a7c28c79}{scope}} =  app.\+Services.\+Create\+Scope()) \{ var scoped\+Provider = scope.\+Service\+Provider}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_web_2_program_8cs_a9e515a27bc8d2c3d2fb6fbdb46c5f470}\label{_web_2_program_8cs_a9e515a27bc8d2c3d2fb6fbdb46c5f470}} 
+\index{Program.cs@{Program.cs}!AddAuthentication@{AddAuthentication}}
+\index{AddAuthentication@{AddAuthentication}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddAuthentication()}{AddAuthentication()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Authentication (\begin{DoxyParamCaption}\item[{Cookie\+Authentication\+Defaults.}]{Authentication\+Scheme }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a123e39cc7c9ef6e668dea1e793557dd0}\label{_web_2_program_8cs_a123e39cc7c9ef6e668dea1e793557dd0}} 
+\index{Program.cs@{Program.cs}!AddBlazoredLocalStorage@{AddBlazoredLocalStorage}}
+\index{AddBlazoredLocalStorage@{AddBlazoredLocalStorage}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddBlazoredLocalStorage()}{AddBlazoredLocalStorage()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Blazored\+Local\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a058d9461ee3382ad01868a23374242c3}\label{_web_2_program_8cs_a058d9461ee3382ad01868a23374242c3}} 
+\index{Program.cs@{Program.cs}!AddBlazorServices@{AddBlazorServices}}
+\index{AddBlazorServices@{AddBlazorServices}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddBlazorServices()}{AddBlazorServices()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Blazor\+Services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a1ba609cb4a4670a98cc74676ee21e91b}\label{_web_2_program_8cs_a1ba609cb4a4670a98cc74676ee21e91b}} 
+\index{Program.cs@{Program.cs}!AddConsole@{AddConsole}}
+\index{AddConsole@{AddConsole}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddConsole()}{AddConsole()}}
+{\footnotesize\ttfamily builder.\+Logging. Add\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_af8107f2f8ff8e8de22a684c8c8ad3e99}\label{_web_2_program_8cs_af8107f2f8ff8e8de22a684c8c8ad3e99}} 
+\index{Program.cs@{Program.cs}!AddControllersWithViews@{AddControllersWithViews}}
+\index{AddControllersWithViews@{AddControllersWithViews}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddControllersWithViews()}{AddControllersWithViews()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Controllers\+With\+Views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a5731ab2cbe8f4ea13068b4cb0554fe15}\label{_web_2_program_8cs_a5731ab2cbe8f4ea13068b4cb0554fe15}} 
+\index{Program.cs@{Program.cs}!AddCookieSettings@{AddCookieSettings}}
+\index{AddCookieSettings@{AddCookieSettings}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddCookieSettings()}{AddCookieSettings()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Cookie\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a1fb8614294a329e35532b8b90c221f38}\label{_web_2_program_8cs_a1fb8614294a329e35532b8b90c221f38}} 
+\index{Program.cs@{Program.cs}!AddCoreServices@{AddCoreServices}}
+\index{AddCoreServices@{AddCoreServices}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddCoreServices()}{AddCoreServices()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Core\+Services (\begin{DoxyParamCaption}\item[{builder.}]{Configuration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ae9ee4e6d7ca0f73335732ae4a52064d2}\label{_web_2_program_8cs_ae9ee4e6d7ca0f73335732ae4a52064d2}} 
+\index{Program.cs@{Program.cs}!AddDatabaseDeveloperPageExceptionFilter@{AddDatabaseDeveloperPageExceptionFilter}}
+\index{AddDatabaseDeveloperPageExceptionFilter@{AddDatabaseDeveloperPageExceptionFilter}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddDatabaseDeveloperPageExceptionFilter()}{AddDatabaseDeveloperPageExceptionFilter()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Database\+Developer\+Page\+Exception\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_aba9bfa76d3ea994f91c5c2e2fa90675f}\label{_web_2_program_8cs_aba9bfa76d3ea994f91c5c2e2fa90675f}} 
+\index{Program.cs@{Program.cs}!AddHealthChecks@{AddHealthChecks}}
+\index{AddHealthChecks@{AddHealthChecks}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddHealthChecks()}{AddHealthChecks()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Health\+Checks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a0651b1cc6b2ec2a500b3fbaaaba6ac6c}\label{_web_2_program_8cs_a0651b1cc6b2ec2a500b3fbaaaba6ac6c}} 
+\index{Program.cs@{Program.cs}!AddHttpContextAccessor@{AddHttpContextAccessor}}
+\index{AddHttpContextAccessor@{AddHttpContextAccessor}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddHttpContextAccessor()}{AddHttpContextAccessor()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Http\+Context\+Accessor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a0f34aea549e21bc2449cd56fc11d4918}\label{_web_2_program_8cs_a0f34aea549e21bc2449cd56fc11d4918}} 
+\index{Program.cs@{Program.cs}!AddIdentity$<$ ApplicationUser, IdentityRole $>$@{AddIdentity$<$ ApplicationUser, IdentityRole $>$}}
+\index{AddIdentity$<$ ApplicationUser, IdentityRole $>$@{AddIdentity$<$ ApplicationUser, IdentityRole $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddIdentity$<$ ApplicationUser, IdentityRole $>$()}{AddIdentity< ApplicationUser, IdentityRole >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Identity$<$ \mbox{\hyperlink{class_application_user}{Application\+User}}, Identity\+Role $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a937999ccf5bd85f696d3e3da745be7f1}\label{_web_2_program_8cs_a937999ccf5bd85f696d3e3da745be7f1}} 
+\index{Program.cs@{Program.cs}!AddMemoryCache@{AddMemoryCache}}
+\index{AddMemoryCache@{AddMemoryCache}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddMemoryCache()}{AddMemoryCache()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Memory\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a5ba852ef84a8f3504d9526c235182960}\label{_web_2_program_8cs_a5ba852ef84a8f3504d9526c235182960}} 
+\index{Program.cs@{Program.cs}!AddMvc@{AddMvc}}
+\index{AddMvc@{AddMvc}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddMvc()}{AddMvc()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Mvc (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{\{ options.\+Conventions.\+Add(new Route\+Token\+Transformer\+Convention(new \mbox{\hyperlink{class_slugify_parameter_transformer}{Slugify\+Parameter\+Transformer}}()));\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a0875755fa5677fec2c61fcef6f750697}\label{_web_2_program_8cs_a0875755fa5677fec2c61fcef6f750697}} 
+\index{Program.cs@{Program.cs}!AddRazorPages@{AddRazorPages}}
+\index{AddRazorPages@{AddRazorPages}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddRazorPages()}{AddRazorPages()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Razor\+Pages (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{\{ options.\+Conventions.\+Authorize\+Page(\char`\"{}/Basket/Checkout\char`\"{});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a80a1c39ba38fab0c4ec132a9b1611fea}\label{_web_2_program_8cs_a80a1c39ba38fab0c4ec132a9b1611fea}} 
+\index{Program.cs@{Program.cs}!AddRouting@{AddRouting}}
+\index{AddRouting@{AddRouting}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddRouting()}{AddRouting()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Routing (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{\{ options.\+Constraint\+Map\mbox{[}\char`\"{}slugify\char`\"{}\mbox{]}=typeof(\mbox{\hyperlink{class_slugify_parameter_transformer}{Slugify\+Parameter\+Transformer}});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a49b425c1e706e50a7eca0c8d95e96675}\label{_web_2_program_8cs_a49b425c1e706e50a7eca0c8d95e96675}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ HttpClient $>$@{AddScoped$<$ HttpClient $>$}}
+\index{AddScoped$<$ HttpClient $>$@{AddScoped$<$ HttpClient $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ HttpClient $>$()}{AddScoped< HttpClient >()}}
+{\footnotesize\ttfamily builder.\+Services. \mbox{\hyperlink{_public_api_2_program_8cs_a178e7604943a992d2b7057bebb8cb0eb}{Add\+Scoped}}$<$ Http\+Client $>$ (\begin{DoxyParamCaption}\item[{s}]{,  }\item[{new Http\+Client \{ Base\+Address=new Uri(base\+Url\+Config.\+Web\+Base) \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_afd563e5d58c7739bb13d956808c697c2}\label{_web_2_program_8cs_afd563e5d58c7739bb13d956808c697c2}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ HttpService $>$@{AddScoped$<$ HttpService $>$}}
+\index{AddScoped$<$ HttpService $>$@{AddScoped$<$ HttpService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ HttpService $>$()}{AddScoped< HttpService >()}}
+{\footnotesize\ttfamily builder.\+Services. \mbox{\hyperlink{_public_api_2_program_8cs_a178e7604943a992d2b7057bebb8cb0eb}{Add\+Scoped}}$<$ \mbox{\hyperlink{class_http_service}{Http\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ab25f8718018adaae9d7e444ba7d219be}\label{_web_2_program_8cs_ab25f8718018adaae9d7e444ba7d219be}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ ITokenClaimsService, IdentityTokenClaimService $>$@{AddScoped$<$ ITokenClaimsService, IdentityTokenClaimService $>$}}
+\index{AddScoped$<$ ITokenClaimsService, IdentityTokenClaimService $>$@{AddScoped$<$ ITokenClaimsService, IdentityTokenClaimService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ ITokenClaimsService, IdentityTokenClaimService $>$()}{AddScoped< ITokenClaimsService, IdentityTokenClaimService >()}}
+{\footnotesize\ttfamily builder.\+Services. \mbox{\hyperlink{_public_api_2_program_8cs_a178e7604943a992d2b7057bebb8cb0eb}{Add\+Scoped}}$<$ \mbox{\hyperlink{interface_i_token_claims_service}{IToken\+Claims\+Service}}, \mbox{\hyperlink{class_identity_token_claim_service}{Identity\+Token\+Claim\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ae0bda9a28d9514307e12285c94e0a6cd}\label{_web_2_program_8cs_ae0bda9a28d9514307e12285c94e0a6cd}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ ToastService $>$@{AddScoped$<$ ToastService $>$}}
+\index{AddScoped$<$ ToastService $>$@{AddScoped$<$ ToastService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ ToastService $>$()}{AddScoped< ToastService >()}}
+{\footnotesize\ttfamily builder.\+Services. \mbox{\hyperlink{_public_api_2_program_8cs_a178e7604943a992d2b7057bebb8cb0eb}{Add\+Scoped}}$<$ \mbox{\hyperlink{class_toast_service}{Toast\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_abda56024f5b832bc28b5198cc50fbf0f}\label{_web_2_program_8cs_abda56024f5b832bc28b5198cc50fbf0f}} 
+\index{Program.cs@{Program.cs}!AddServerSideBlazor@{AddServerSideBlazor}}
+\index{AddServerSideBlazor@{AddServerSideBlazor}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddServerSideBlazor()}{AddServerSideBlazor()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Server\+Side\+Blazor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a054a65edd03b935002a277ac6a4c5402}\label{_web_2_program_8cs_a054a65edd03b935002a277ac6a4c5402}} 
+\index{Program.cs@{Program.cs}!AddWebServices@{AddWebServices}}
+\index{AddWebServices@{AddWebServices}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddWebServices()}{AddWebServices()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Web\+Services (\begin{DoxyParamCaption}\item[{builder.}]{Configuration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ab43e01d035a27754dae62444a59b3cab}\label{_web_2_program_8cs_ab43e01d035a27754dae62444a59b3cab}} 
+\index{Program.cs@{Program.cs}!catch@{catch}}
+\index{catch@{catch}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{catch()}{catch()}}
+{\footnotesize\ttfamily catch (\begin{DoxyParamCaption}\item[{Exception}]{ex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a460fcb7d54145998a6b589405158a210}\label{_web_2_program_8cs_a460fcb7d54145998a6b589405158a210}} 
+\index{Program.cs@{Program.cs}!Configure$<$ BaseUrlConfiguration $>$@{Configure$<$ BaseUrlConfiguration $>$}}
+\index{Configure$<$ BaseUrlConfiguration $>$@{Configure$<$ BaseUrlConfiguration $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Configure$<$ BaseUrlConfiguration $>$()}{Configure< BaseUrlConfiguration >()}}
+{\footnotesize\ttfamily builder.\+Services. Configure$<$ \mbox{\hyperlink{class_base_url_configuration}{Base\+Url\+Configuration}} $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_web_2_program_8cs_ae063a800c5169551897af812fca8ce13}{config\+Section}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_abbdce942082b471b81037ef7be34c2d8}\label{_web_2_program_8cs_abbdce942082b471b81037ef7be34c2d8}} 
+\index{Program.cs@{Program.cs}!Configure$<$ ServiceConfig $>$@{Configure$<$ ServiceConfig $>$}}
+\index{Configure$<$ ServiceConfig $>$@{Configure$<$ ServiceConfig $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Configure$<$ ServiceConfig $>$()}{Configure< ServiceConfig >()}}
+{\footnotesize\ttfamily builder.\+Services. Configure$<$ Service\+Config $>$ (\begin{DoxyParamCaption}\item[{config}]{,  }\item[{\{ config.\+Services=new \mbox{\hyperlink{class_list}{List}}$<$ Service\+Descriptor $>$(builder.\+Services);config.\+Path=\char`\"{}/allservices\char`\"{};\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ae24852b692e609d1ad44193ff5c8f0eb}\label{_web_2_program_8cs_ae24852b692e609d1ad44193ff5c8f0eb}} 
+\index{Program.cs@{Program.cs}!ConfigureServices@{ConfigureServices}}
+\index{ConfigureServices@{ConfigureServices}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{ConfigureServices()}{ConfigureServices()}}
+{\footnotesize\ttfamily Microsoft.\+e\+Shop\+Web.\+Infrastructure.\+Dependencies. Configure\+Services (\begin{DoxyParamCaption}\item[{builder.}]{Configuration,  }\item[{builder.}]{Services }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_af112c5d9884ded705d6b51f55754d940}\label{_web_2_program_8cs_af112c5d9884ded705d6b51f55754d940}} 
+\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{!string.}]{Is\+Null\+Or\+Emptycatalog\+Base\+Url }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_aa0532817e438f2a0ef9c2b696807ebe1}\label{_web_2_program_8cs_aa0532817e438f2a0ef9c2b696807ebe1}} 
+\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{app.\+Environment.\+Is\+Development()$\vert$$\vert$app.\+Environment.}]{Environment\+Name = {\ttfamily =~\char`\"{}Docker\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a4ff6dd1a749a1553137b2bfe7ef62663}\label{_web_2_program_8cs_a4ff6dd1a749a1553137b2bfe7ef62663}} 
+\index{Program.cs@{Program.cs}!LogInformation@{LogInformation}}
+\index{LogInformation@{LogInformation}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{LogInformation()}{LogInformation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily app.\+Logger. Log\+Information (\begin{DoxyParamCaption}\item[{\char`\"{}App created...\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a93e90d0c50ee69be6567bf33ec0d857d}\label{_web_2_program_8cs_a93e90d0c50ee69be6567bf33ec0d857d}} 
+\index{Program.cs@{Program.cs}!LogInformation@{LogInformation}}
+\index{LogInformation@{LogInformation}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{LogInformation()}{LogInformation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily app.\+Logger. Log\+Information (\begin{DoxyParamCaption}\item[{\char`\"{}LAUNCHING\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a20154bba8565afea10fc3637fa6cc90b}\label{_web_2_program_8cs_a20154bba8565afea10fc3637fa6cc90b}} 
+\index{Program.cs@{Program.cs}!LogInformation@{LogInformation}}
+\index{LogInformation@{LogInformation}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{LogInformation()}{LogInformation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily app.\+Logger. Log\+Information (\begin{DoxyParamCaption}\item[{\char`\"{}Seeding Database...\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}\label{_web_2_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}} 
+\index{Program.cs@{Program.cs}!Run@{Run}}
+\index{Run@{Run}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily app. Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a1469db3d9ada93d39a0fcb314b0ba3c6}\label{_web_2_program_8cs_a1469db3d9ada93d39a0fcb314b0ba3c6}} 
+\index{Program.cs@{Program.cs}!SeedAsync@{SeedAsync}}
+\index{SeedAsync@{SeedAsync}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{SeedAsync()}{SeedAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily await Catalog\+Context\+Seed. Seed\+Async (\begin{DoxyParamCaption}\item[{catalog\+Context}]{,  }\item[{app.}]{Logger }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a8ac678d19a3725b90bf803fef2cce44f}\label{_web_2_program_8cs_a8ac678d19a3725b90bf803fef2cce44f}} 
+\index{Program.cs@{Program.cs}!SeedAsync@{SeedAsync}}
+\index{SeedAsync@{SeedAsync}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{SeedAsync()}{SeedAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily await App\+Identity\+Db\+Context\+Seed. Seed\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_web_2_program_8cs_a33853341d8fa47c095f8eb552389b4ac}{identity\+Context}}}]{,  }\item[{\mbox{\hyperlink{_web_2_program_8cs_a443194c44226acee0d9a385208c6bc36}{user\+Manager}}}]{,  }\item[{\mbox{\hyperlink{_web_2_program_8cs_a626f568cbfb4bffcd264309162e2608b}{role\+Manager}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a6435d8beeff4999dc0b0c6d60a86a4e2}\label{_web_2_program_8cs_a6435d8beeff4999dc0b0c6d60a86a4e2}} 
+\index{Program.cs@{Program.cs}!UseAuthentication@{UseAuthentication}}
+\index{UseAuthentication@{UseAuthentication}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseAuthentication()}{UseAuthentication()}}
+{\footnotesize\ttfamily app. Use\+Authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_af6f72d752b2e73aa0292f74bd13237ab}\label{_web_2_program_8cs_af6f72d752b2e73aa0292f74bd13237ab}} 
+\index{Program.cs@{Program.cs}!UseAuthorization@{UseAuthorization}}
+\index{UseAuthorization@{UseAuthorization}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseAuthorization()}{UseAuthorization()}}
+{\footnotesize\ttfamily app. Use\+Authorization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_aed1efa704e60214c06e980909b57ee78}\label{_web_2_program_8cs_aed1efa704e60214c06e980909b57ee78}} 
+\index{Program.cs@{Program.cs}!UseBlazorFrameworkFiles@{UseBlazorFrameworkFiles}}
+\index{UseBlazorFrameworkFiles@{UseBlazorFrameworkFiles}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseBlazorFrameworkFiles()}{UseBlazorFrameworkFiles()}}
+{\footnotesize\ttfamily app. Use\+Blazor\+Framework\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_adbb30d5ce66f0c1350a8079f60a0eeab}\label{_web_2_program_8cs_adbb30d5ce66f0c1350a8079f60a0eeab}} 
+\index{Program.cs@{Program.cs}!UseCookiePolicy@{UseCookiePolicy}}
+\index{UseCookiePolicy@{UseCookiePolicy}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseCookiePolicy()}{UseCookiePolicy()}}
+{\footnotesize\ttfamily app. Use\+Cookie\+Policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a1ef00ae788678660119ce7af3699c2c4}\label{_web_2_program_8cs_a1ef00ae788678660119ce7af3699c2c4}} 
+\index{Program.cs@{Program.cs}!UseEndpoints@{UseEndpoints}}
+\index{UseEndpoints@{UseEndpoints}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseEndpoints()}{UseEndpoints()}}
+{\footnotesize\ttfamily app. Use\+Endpoints (\begin{DoxyParamCaption}\item[{endpoints}]{,  }\item[{\{ endpoints.\+Map\+Controller\+Route(\char`\"{}default\char`\"{}, \char`\"{}\{controller\+:slugify=Home\}/\{action\+:slugify=Index\}/\{id?\}\char`\"{});endpoints.\+Map\+Razor\+Pages();endpoints.\+Map\+Health\+Checks(\char`\"{}home\+\_\+page\+\_\+health\+\_\+check\char`\"{}, new Health\+Check\+Options \{ Predicate=check=$>$ check.\+Tags.\+Contains(\char`\"{}home\+Page\+Health\+Check\char`\"{}) \});endpoints.\+Map\+Health\+Checks(\char`\"{}api\+\_\+health\+\_\+check\char`\"{}, new Health\+Check\+Options \{ Predicate=check=$>$ check.\+Tags.\+Contains(\char`\"{}api\+Health\+Check\char`\"{}) \});endpoints.\+Map\+Fallback\+To\+File(\char`\"{}index.\+html\char`\"{});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a4f2d277735c6c2ba1628e609648e3099}\label{_web_2_program_8cs_a4f2d277735c6c2ba1628e609648e3099}} 
+\index{Program.cs@{Program.cs}!UseExceptionHandler@{UseExceptionHandler}}
+\index{UseExceptionHandler@{UseExceptionHandler}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseExceptionHandler()}{UseExceptionHandler()}}
+{\footnotesize\ttfamily app. Use\+Exception\+Handler (\begin{DoxyParamCaption}\item[{\char`\"{}/Error\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ae6884a129b12416e0f18ce032290780c}\label{_web_2_program_8cs_ae6884a129b12416e0f18ce032290780c}} 
+\index{Program.cs@{Program.cs}!UseHealthChecks@{UseHealthChecks}}
+\index{UseHealthChecks@{UseHealthChecks}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseHealthChecks()}{UseHealthChecks()}}
+{\footnotesize\ttfamily app. Use\+Health\+Checks (\begin{DoxyParamCaption}\item[{\char`\"{}/health\char`\"{}}]{,  }\item[{new Health\+Check\+Options \{ Response\+Writer=async(context, report)=$>$ \{ var result=new \{ status=report.\+Status.\+To\+String(), errors=report.\+Entries.\+Select(e=$>$ new \{ \mbox{\hyperlink{_public_api_2_program_8cs_a9bbe78e9381a5fe38011c4fa0f948854}{key}}=e.\+Key, value=Enum.\+Get\+Name(typeof(Health\+Status), e.\+Value.\+Status) \}) \}.To\+Json();context.\+Response.\+Content\+Type=Media\+Type\+Names.\+Application.\+Json;await context.\+Response.\+Write\+Async(result);\} \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a8c2c34f600427906d008e9ce976831ec}\label{_web_2_program_8cs_a8c2c34f600427906d008e9ce976831ec}} 
+\index{Program.cs@{Program.cs}!UseHsts@{UseHsts}}
+\index{UseHsts@{UseHsts}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseHsts()}{UseHsts()}}
+{\footnotesize\ttfamily app. Use\+Hsts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_aa4d447fc3129a3aa301d736b8bd04ae9}\label{_web_2_program_8cs_aa4d447fc3129a3aa301d736b8bd04ae9}} 
+\index{Program.cs@{Program.cs}!UseHttpsRedirection@{UseHttpsRedirection}}
+\index{UseHttpsRedirection@{UseHttpsRedirection}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseHttpsRedirection()}{UseHttpsRedirection()}}
+{\footnotesize\ttfamily app. Use\+Https\+Redirection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a94c810d266751293a2d511a720a5625f}\label{_web_2_program_8cs_a94c810d266751293a2d511a720a5625f}} 
+\index{Program.cs@{Program.cs}!UseRouting@{UseRouting}}
+\index{UseRouting@{UseRouting}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseRouting()}{UseRouting()}}
+{\footnotesize\ttfamily app. Use\+Routing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a906a3ce545279a7a73941f1d7b64d7cf}\label{_web_2_program_8cs_a906a3ce545279a7a73941f1d7b64d7cf}} 
+\index{Program.cs@{Program.cs}!UseStaticFiles@{UseStaticFiles}}
+\index{UseStaticFiles@{UseStaticFiles}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseStaticFiles()}{UseStaticFiles()}}
+{\footnotesize\ttfamily app. Use\+Static\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_web_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}\label{_web_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}} 
+\index{Program.cs@{Program.cs}!app@{app}}
+\index{app@{app}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily var app = \mbox{\hyperlink{_blazor_admin_2_program_8cs_a103eab9352a5901779f62f6c98b53f7b}{builder.\+Build}}()}
+
+\mbox{\Hypertarget{_web_2_program_8cs_aeea6042fb3715e7ed16f02780a094388}\label{_web_2_program_8cs_aeea6042fb3715e7ed16f02780a094388}} 
+\index{Program.cs@{Program.cs}!baseUrlConfig@{baseUrlConfig}}
+\index{baseUrlConfig@{baseUrlConfig}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{baseUrlConfig}{baseUrlConfig}}
+{\footnotesize\ttfamily var base\+Url\+Config = config\+Section.\+Get$<$\mbox{\hyperlink{class_base_url_configuration}{Base\+Url\+Configuration}}$>$()}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}\label{_web_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}} 
+\index{Program.cs@{Program.cs}!builder@{builder}}
+\index{builder@{builder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily var builder = Web\+Application.\+Create\+Builder(args)}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a1fb13c2cb512ffb376fc780e98bc5853}\label{_web_2_program_8cs_a1fb13c2cb512ffb376fc780e98bc5853}} 
+\index{Program.cs@{Program.cs}!catalogBaseUrl@{catalogBaseUrl}}
+\index{catalogBaseUrl@{catalogBaseUrl}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{catalogBaseUrl}{catalogBaseUrl}}
+{\footnotesize\ttfamily var catalog\+Base\+Url = builder.\+Configuration.\+Get\+Value(typeof(string), \char`\"{}Catalog\+Base\+Url\char`\"{}) as string}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ae063a800c5169551897af812fca8ce13}\label{_web_2_program_8cs_ae063a800c5169551897af812fca8ce13}} 
+\index{Program.cs@{Program.cs}!configSection@{configSection}}
+\index{configSection@{configSection}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{configSection}{configSection}}
+{\footnotesize\ttfamily var config\+Section = builder.\+Configuration.\+Get\+Required\+Section(\mbox{\hyperlink{class_base_url_configuration_a2bb7c2b3bcbe49d697daaa8b38e32f04}{Base\+Url\+Configuration.\+CONFIG\+\_\+\+NAME}})}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a0544c3fe466e421738dae463968b70ba}\label{_web_2_program_8cs_a0544c3fe466e421738dae463968b70ba}} 
+\index{Program.cs@{Program.cs}!else@{else}}
+\index{else@{else}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{_public_api_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.Logger.LogInformation(\textcolor{stringliteral}{"{}Adding non-\/Development middleware..."{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_web_2_program_8cs_a33853341d8fa47c095f8eb552389b4ac}\label{_web_2_program_8cs_a33853341d8fa47c095f8eb552389b4ac}} 
+\index{Program.cs@{Program.cs}!identityContext@{identityContext}}
+\index{identityContext@{identityContext}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{identityContext}{identityContext}}
+{\footnotesize\ttfamily var identity\+Context = scoped\+Provider.\+Get\+Required\+Service$<$\mbox{\hyperlink{class_app_identity_db_context}{App\+Identity\+Db\+Context}}$>$()}
+
+\mbox{\Hypertarget{_web_2_program_8cs_a626f568cbfb4bffcd264309162e2608b}\label{_web_2_program_8cs_a626f568cbfb4bffcd264309162e2608b}} 
+\index{Program.cs@{Program.cs}!roleManager@{roleManager}}
+\index{roleManager@{roleManager}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{roleManager}{roleManager}}
+{\footnotesize\ttfamily var role\+Manager = scoped\+Provider.\+Get\+Required\+Service$<$Role\+Manager$<$Identity\+Role$>$$>$()}
+
+\mbox{\Hypertarget{_web_2_program_8cs_ad184468608e5798dbf1dae7de5e0ee8d}\label{_web_2_program_8cs_ad184468608e5798dbf1dae7de5e0ee8d}} 
+\index{Program.cs@{Program.cs}!tags@{tags}}
+\index{tags@{tags}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{tags}{tags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_web_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} Services tags}
+
+\mbox{\Hypertarget{_web_2_program_8cs_abe4cc9788f52e49485473dc699537388}\label{_web_2_program_8cs_abe4cc9788f52e49485473dc699537388}} 
+\index{Program.cs@{Program.cs}!try@{try}}
+\index{try@{try}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily try}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        var catalogContext = scopedProvider.GetRequiredService<\mbox{\hyperlink{class_catalog_context}{CatalogContext}}>()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_web_2_program_8cs_a443194c44226acee0d9a385208c6bc36}\label{_web_2_program_8cs_a443194c44226acee0d9a385208c6bc36}} 
+\index{Program.cs@{Program.cs}!userManager@{userManager}}
+\index{userManager@{userManager}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{userManager}{userManager}}
+{\footnotesize\ttfamily var user\+Manager = scoped\+Provider.\+Get\+Required\+Service$<$User\+Manager$<$\mbox{\hyperlink{class_application_user}{Application\+User}}$>$$>$()}
+

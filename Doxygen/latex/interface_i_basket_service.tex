@@ -1,0 +1,67 @@
+\hypertarget{interface_i_basket_service}{}\doxysection{IBasket\+Service Interface Reference}
+\label{interface_i_basket_service}\index{IBasketService@{IBasketService}}
+Inheritance diagram for IBasket\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_basket_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_i_basket_service_a818b963d30df9fe2fd3a149d38c8bb03}{Transfer\+Basket\+Async}} (string anonymous\+Id, string user\+Name)
+\item 
+Task$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$ \mbox{\hyperlink{interface_i_basket_service_a575361b5bc8706b4a695089e17cf7619}{Add\+Item\+To\+Basket}} (string username, int catalog\+Item\+Id, decimal price, int quantity=1)
+\item 
+Task$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$ \mbox{\hyperlink{interface_i_basket_service_ae182aa63c93f63f2d66c2c8df74b022d}{Set\+Quantities}} (int basket\+Id, Dictionary$<$ string, int $>$ quantities)
+\item 
+Task \mbox{\hyperlink{interface_i_basket_service_a72774ed3c9a2f8d141395727bbd1bb00}{Delete\+Basket\+Async}} (int basket\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_i_basket_service_a575361b5bc8706b4a695089e17cf7619}\label{interface_i_basket_service_a575361b5bc8706b4a695089e17cf7619}} 
+\index{IBasketService@{IBasketService}!AddItemToBasket@{AddItemToBasket}}
+\index{AddItemToBasket@{AddItemToBasket}!IBasketService@{IBasketService}}
+\doxysubsubsection{\texorpdfstring{AddItemToBasket()}{AddItemToBasket()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_basket}{Basket}}$>$ IBasket\+Service.\+Add\+Item\+To\+Basket (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{int}]{catalog\+Item\+Id,  }\item[{decimal}]{price,  }\item[{int}]{quantity = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_basket_service_a80ac3ce0c59d81fdb579c7e4025a0f4e}{Basket\+Service}}.
+
+\mbox{\Hypertarget{interface_i_basket_service_a72774ed3c9a2f8d141395727bbd1bb00}\label{interface_i_basket_service_a72774ed3c9a2f8d141395727bbd1bb00}} 
+\index{IBasketService@{IBasketService}!DeleteBasketAsync@{DeleteBasketAsync}}
+\index{DeleteBasketAsync@{DeleteBasketAsync}!IBasketService@{IBasketService}}
+\doxysubsubsection{\texorpdfstring{DeleteBasketAsync()}{DeleteBasketAsync()}}
+{\footnotesize\ttfamily Task IBasket\+Service.\+Delete\+Basket\+Async (\begin{DoxyParamCaption}\item[{int}]{basket\+Id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_basket_service_a194dd6102debf7ac3a8446c18aa576bd}{Basket\+Service}}.
+
+\mbox{\Hypertarget{interface_i_basket_service_ae182aa63c93f63f2d66c2c8df74b022d}\label{interface_i_basket_service_ae182aa63c93f63f2d66c2c8df74b022d}} 
+\index{IBasketService@{IBasketService}!SetQuantities@{SetQuantities}}
+\index{SetQuantities@{SetQuantities}!IBasketService@{IBasketService}}
+\doxysubsubsection{\texorpdfstring{SetQuantities()}{SetQuantities()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_basket}{Basket}}$>$ IBasket\+Service.\+Set\+Quantities (\begin{DoxyParamCaption}\item[{int}]{basket\+Id,  }\item[{Dictionary$<$ string, int $>$}]{quantities }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_basket_service_a643f14974c38902325a849d551238a75}{Basket\+Service}}.
+
+\mbox{\Hypertarget{interface_i_basket_service_a818b963d30df9fe2fd3a149d38c8bb03}\label{interface_i_basket_service_a818b963d30df9fe2fd3a149d38c8bb03}} 
+\index{IBasketService@{IBasketService}!TransferBasketAsync@{TransferBasketAsync}}
+\index{TransferBasketAsync@{TransferBasketAsync}!IBasketService@{IBasketService}}
+\doxysubsubsection{\texorpdfstring{TransferBasketAsync()}{TransferBasketAsync()}}
+{\footnotesize\ttfamily Task IBasket\+Service.\+Transfer\+Basket\+Async (\begin{DoxyParamCaption}\item[{string}]{anonymous\+Id,  }\item[{string}]{user\+Name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_basket_service_ad0a2dac66dd1b13dcc5185d2e2a47d96}{Basket\+Service}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Application\+Core/\+Interfaces/\mbox{\hyperlink{_i_basket_service_8cs}{IBasket\+Service.\+cs}}\end{DoxyCompactItemize}

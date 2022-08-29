@@ -1,0 +1,142 @@
+\hypertarget{_blazor_admin_2_program_8cs}{}\doxysection{C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Blazor\+Admin/\+Program.cs File Reference}
+\label{_blazor_admin_2_program_8cs}\index{C:/Users/ishaan\_marjit/Desktop/Maverick/Dev Prod/eShopOnWeb/src/BlazorAdmin/Program.cs@{C:/Users/ishaan\_marjit/Desktop/Maverick/Dev Prod/eShopOnWeb/src/BlazorAdmin/Program.cs}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+builder.\+Root\+Components. \mbox{\hyperlink{_blazor_admin_2_program_8cs_a8dc9ac1c4a1f585f7e73cd6f9775496b}{Add$<$ App $>$}} (\char`\"{}\#admin\char`\"{})
+\item 
+builder.\+Root\+Components. \mbox{\hyperlink{_blazor_admin_2_program_8cs_ad6782a94a41c3712e4b16f5e5e37f781}{Add$<$ Head\+Outlet $>$}} (\char`\"{}head\+::after\char`\"{})
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_a460fcb7d54145998a6b589405158a210}{Configure$<$ Base\+Url\+Configuration $>$}} (\mbox{\hyperlink{_web_2_program_8cs_ae063a800c5169551897af812fca8ce13}{config\+Section}})
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_af4e30767dad9fb71a8cfbfc19d4a9507}{Add\+Scoped}} (sp=$>$ new Http\+Client() \{ Base\+Address=new Uri(builder.\+Host\+Environment.\+Base\+Address) \})
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_ae0bda9a28d9514307e12285c94e0a6cd}{Add\+Scoped$<$ Toast\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_afd563e5d58c7739bb13d956808c697c2}{Add\+Scoped$<$ Http\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_a123e39cc7c9ef6e668dea1e793557dd0}{Add\+Blazored\+Local\+Storage}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_a2ee5517a6d87cbc5d173f16e0cd11c01}{Add\+Authorization\+Core}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_a236c84464b4f048070b2213a67893352}{Add\+Scoped$<$ Authentication\+State\+Provider, Custom\+Auth\+State\+Provider $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_ad88c98cfff9d81a65d4229b7fdf32b91}{Add\+Scoped}} (sp=$>$(\mbox{\hyperlink{class_custom_auth_state_provider}{Custom\+Auth\+State\+Provider}}) sp.\+Get\+Required\+Service$<$ Authentication\+State\+Provider $>$())
+\item 
+builder.\+Services. \mbox{\hyperlink{_blazor_admin_2_program_8cs_a058d9461ee3382ad01868a23374242c3}{Add\+Blazor\+Services}} ()
+\item 
+builder.\+Logging. \mbox{\hyperlink{_blazor_admin_2_program_8cs_af973aead8fd93ef51302d414bc853a4c}{Add\+Configuration}} (builder.\+Configuration.\+Get\+Required\+Section(\char`\"{}Logging\char`\"{}))
+\item 
+await \mbox{\hyperlink{_blazor_admin_2_program_8cs_a179fcddca7b5c479c49bd716c2b40024}{Clear\+Local\+Storage\+Cache}} (builder.\+Services)
+\item 
+await builder. \mbox{\hyperlink{_blazor_admin_2_program_8cs_a103eab9352a5901779f62f6c98b53f7b}{Build}} ().Run\+Async()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{_blazor_admin_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} = Web\+Assembly\+Host\+Builder.\+Create\+Default(args)
+\item 
+var \mbox{\hyperlink{_blazor_admin_2_program_8cs_ae063a800c5169551897af812fca8ce13}{config\+Section}} = builder.\+Configuration.\+Get\+Required\+Section(\mbox{\hyperlink{class_base_url_configuration_a2bb7c2b3bcbe49d697daaa8b38e32f04}{Base\+Url\+Configuration.\+CONFIG\+\_\+\+NAME}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a8dc9ac1c4a1f585f7e73cd6f9775496b}\label{_blazor_admin_2_program_8cs_a8dc9ac1c4a1f585f7e73cd6f9775496b}} 
+\index{Program.cs@{Program.cs}!Add$<$ App $>$@{Add$<$ App $>$}}
+\index{Add$<$ App $>$@{Add$<$ App $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Add$<$ App $>$()}{Add< App >()}}
+{\footnotesize\ttfamily builder.\+Root\+Components. Add$<$ App $>$ (\begin{DoxyParamCaption}\item[{\char`\"{}\#admin\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_ad6782a94a41c3712e4b16f5e5e37f781}\label{_blazor_admin_2_program_8cs_ad6782a94a41c3712e4b16f5e5e37f781}} 
+\index{Program.cs@{Program.cs}!Add$<$ HeadOutlet $>$@{Add$<$ HeadOutlet $>$}}
+\index{Add$<$ HeadOutlet $>$@{Add$<$ HeadOutlet $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Add$<$ HeadOutlet $>$()}{Add< HeadOutlet >()}}
+{\footnotesize\ttfamily builder.\+Root\+Components. Add$<$ Head\+Outlet $>$ (\begin{DoxyParamCaption}\item[{\char`\"{}head\+::after\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a2ee5517a6d87cbc5d173f16e0cd11c01}\label{_blazor_admin_2_program_8cs_a2ee5517a6d87cbc5d173f16e0cd11c01}} 
+\index{Program.cs@{Program.cs}!AddAuthorizationCore@{AddAuthorizationCore}}
+\index{AddAuthorizationCore@{AddAuthorizationCore}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddAuthorizationCore()}{AddAuthorizationCore()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Authorization\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a123e39cc7c9ef6e668dea1e793557dd0}\label{_blazor_admin_2_program_8cs_a123e39cc7c9ef6e668dea1e793557dd0}} 
+\index{Program.cs@{Program.cs}!AddBlazoredLocalStorage@{AddBlazoredLocalStorage}}
+\index{AddBlazoredLocalStorage@{AddBlazoredLocalStorage}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddBlazoredLocalStorage()}{AddBlazoredLocalStorage()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Blazored\+Local\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a058d9461ee3382ad01868a23374242c3}\label{_blazor_admin_2_program_8cs_a058d9461ee3382ad01868a23374242c3}} 
+\index{Program.cs@{Program.cs}!AddBlazorServices@{AddBlazorServices}}
+\index{AddBlazorServices@{AddBlazorServices}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddBlazorServices()}{AddBlazorServices()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Blazor\+Services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_af973aead8fd93ef51302d414bc853a4c}\label{_blazor_admin_2_program_8cs_af973aead8fd93ef51302d414bc853a4c}} 
+\index{Program.cs@{Program.cs}!AddConfiguration@{AddConfiguration}}
+\index{AddConfiguration@{AddConfiguration}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddConfiguration()}{AddConfiguration()}}
+{\footnotesize\ttfamily builder.\+Logging. Add\+Configuration (\begin{DoxyParamCaption}\item[{builder.\+Configuration.}]{Get\+Required\+Section\char`\"{}\+Logging\char`\"{} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_af4e30767dad9fb71a8cfbfc19d4a9507}\label{_blazor_admin_2_program_8cs_af4e30767dad9fb71a8cfbfc19d4a9507}} 
+\index{Program.cs@{Program.cs}!AddScoped@{AddScoped}}
+\index{AddScoped@{AddScoped}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped()}{AddScoped()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped (\begin{DoxyParamCaption}\item[{sp}]{,  }\item[{new Http\+Client() \{ Base\+Address=new Uri(builder.\+Host\+Environment.\+Base\+Address) \}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_ad88c98cfff9d81a65d4229b7fdf32b91}\label{_blazor_admin_2_program_8cs_ad88c98cfff9d81a65d4229b7fdf32b91}} 
+\index{Program.cs@{Program.cs}!AddScoped@{AddScoped}}
+\index{AddScoped@{AddScoped}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped()}{AddScoped()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped (\begin{DoxyParamCaption}\item[{sp}]{,  }\item[{(\mbox{\hyperlink{class_custom_auth_state_provider}{Custom\+Auth\+State\+Provider}}) sp.\+Get\+Required\+Service$<$ Authentication\+State\+Provider $>$()}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a236c84464b4f048070b2213a67893352}\label{_blazor_admin_2_program_8cs_a236c84464b4f048070b2213a67893352}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ AuthenticationStateProvider, CustomAuthStateProvider $>$@{AddScoped$<$ AuthenticationStateProvider, CustomAuthStateProvider $>$}}
+\index{AddScoped$<$ AuthenticationStateProvider, CustomAuthStateProvider $>$@{AddScoped$<$ AuthenticationStateProvider, CustomAuthStateProvider $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ AuthenticationStateProvider, CustomAuthStateProvider $>$()}{AddScoped< AuthenticationStateProvider, CustomAuthStateProvider >()}}
+{\footnotesize\ttfamily builder.\+Services. \mbox{\hyperlink{_public_api_2_program_8cs_a178e7604943a992d2b7057bebb8cb0eb}{Add\+Scoped}}$<$ Authentication\+State\+Provider, \mbox{\hyperlink{class_custom_auth_state_provider}{Custom\+Auth\+State\+Provider}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_afd563e5d58c7739bb13d956808c697c2}\label{_blazor_admin_2_program_8cs_afd563e5d58c7739bb13d956808c697c2}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ HttpService $>$@{AddScoped$<$ HttpService $>$}}
+\index{AddScoped$<$ HttpService $>$@{AddScoped$<$ HttpService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ HttpService $>$()}{AddScoped< HttpService >()}}
+{\footnotesize\ttfamily builder.\+Services. \mbox{\hyperlink{_public_api_2_program_8cs_a178e7604943a992d2b7057bebb8cb0eb}{Add\+Scoped}}$<$ \mbox{\hyperlink{class_http_service}{Http\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_ae0bda9a28d9514307e12285c94e0a6cd}\label{_blazor_admin_2_program_8cs_ae0bda9a28d9514307e12285c94e0a6cd}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ ToastService $>$@{AddScoped$<$ ToastService $>$}}
+\index{AddScoped$<$ ToastService $>$@{AddScoped$<$ ToastService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ ToastService $>$()}{AddScoped< ToastService >()}}
+{\footnotesize\ttfamily builder.\+Services. \mbox{\hyperlink{_public_api_2_program_8cs_a178e7604943a992d2b7057bebb8cb0eb}{Add\+Scoped}}$<$ \mbox{\hyperlink{class_toast_service}{Toast\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a103eab9352a5901779f62f6c98b53f7b}\label{_blazor_admin_2_program_8cs_a103eab9352a5901779f62f6c98b53f7b}} 
+\index{Program.cs@{Program.cs}!Build@{Build}}
+\index{Build@{Build}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily await builder. Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a179fcddca7b5c479c49bd716c2b40024}\label{_blazor_admin_2_program_8cs_a179fcddca7b5c479c49bd716c2b40024}} 
+\index{Program.cs@{Program.cs}!ClearLocalStorageCache@{ClearLocalStorageCache}}
+\index{ClearLocalStorageCache@{ClearLocalStorageCache}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{ClearLocalStorageCache()}{ClearLocalStorageCache()}}
+{\footnotesize\ttfamily await Clear\+Local\+Storage\+Cache (\begin{DoxyParamCaption}\item[{builder.}]{Services }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a460fcb7d54145998a6b589405158a210}\label{_blazor_admin_2_program_8cs_a460fcb7d54145998a6b589405158a210}} 
+\index{Program.cs@{Program.cs}!Configure$<$ BaseUrlConfiguration $>$@{Configure$<$ BaseUrlConfiguration $>$}}
+\index{Configure$<$ BaseUrlConfiguration $>$@{Configure$<$ BaseUrlConfiguration $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Configure$<$ BaseUrlConfiguration $>$()}{Configure< BaseUrlConfiguration >()}}
+{\footnotesize\ttfamily builder.\+Services. Configure$<$ \mbox{\hyperlink{class_base_url_configuration}{Base\+Url\+Configuration}} $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_web_2_program_8cs_ae063a800c5169551897af812fca8ce13}{config\+Section}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}\label{_blazor_admin_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}} 
+\index{Program.cs@{Program.cs}!builder@{builder}}
+\index{builder@{builder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily var builder = Web\+Assembly\+Host\+Builder.\+Create\+Default(args)}
+
+\mbox{\Hypertarget{_blazor_admin_2_program_8cs_ae063a800c5169551897af812fca8ce13}\label{_blazor_admin_2_program_8cs_ae063a800c5169551897af812fca8ce13}} 
+\index{Program.cs@{Program.cs}!configSection@{configSection}}
+\index{configSection@{configSection}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{configSection}{configSection}}
+{\footnotesize\ttfamily var config\+Section = builder.\+Configuration.\+Get\+Required\+Section(\mbox{\hyperlink{class_base_url_configuration_a2bb7c2b3bcbe49d697daaa8b38e32f04}{Base\+Url\+Configuration.\+CONFIG\+\_\+\+NAME}})}
+

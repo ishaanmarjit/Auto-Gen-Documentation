@@ -1,0 +1,212 @@
+\hypertarget{class_manage_controller}{}\doxysection{Manage\+Controller Class Reference}
+\label{class_manage_controller}\index{ManageController@{ManageController}}
+Inheritance diagram for Manage\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_manage_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_manage_controller_af1da01c043a497a5b8fe4deedb47b5ae}{Manage\+Controller}} (User\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$ \mbox{\hyperlink{_web_2_program_8cs_a443194c44226acee0d9a385208c6bc36}{user\+Manager}}, Sign\+In\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$ sign\+In\+Manager, \mbox{\hyperlink{interface_i_email_sender}{IEmail\+Sender}} email\+Sender, \mbox{\hyperlink{interface_i_app_logger}{IApp\+Logger}}$<$ \mbox{\hyperlink{class_manage_controller}{Manage\+Controller}} $>$ logger, Url\+Encoder url\+Encoder)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a7fe2fc9ad8f938adf5e8d2595877acfe}{My\+Account}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a9faf403e66e0d572766074c8e097879e}{My\+Account}} (\mbox{\hyperlink{class_index_view_model}{Index\+View\+Model}} model)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_aa86bb2ee8f0283d91f8f4f4a65e8631d}{Send\+Verification\+Email}} (\mbox{\hyperlink{class_index_view_model}{Index\+View\+Model}} model)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_aff3a5fe0f80d29c841eec2bddff8e932}{Change\+Password}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_adf5392d06479fb98cff45444e75cc3ee}{Change\+Password}} (\mbox{\hyperlink{class_change_password_view_model}{Change\+Password\+View\+Model}} model)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_ad26a184c10e67010e7e02ff5378f6219}{Set\+Password}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a78d2dffd14e6bfe5e7e486275ea5130d}{Set\+Password}} (\mbox{\hyperlink{class_set_password_view_model}{Set\+Password\+View\+Model}} model)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a7b37aafadd8a4778b4a8bdca8f2b48bf}{External\+Logins}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_ac96ba3394900908c5b1fc6125a869492}{Link\+Login}} (string provider)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_ac2d2b3b6ccfc48f3b0d19fd543f9f2f3}{Link\+Login\+Callback}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a62b5212c87f11ffb88791a9a2e94f674}{Remove\+Login}} (\mbox{\hyperlink{class_remove_login_view_model}{Remove\+Login\+View\+Model}} model)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a0880bf03b96569bd99b440a3f2b7adf3}{Two\+Factor\+Authentication}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_aea79e903d467041e95082e20b25e00af}{Disable2fa\+Warning}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a163f2dafcb854bbfa89761431d91f9c4}{Disable2fa}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a36a45db542d7eb1d1a7cc230ae977b0c}{Enable\+Authenticator}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{class_manage_controller_a6ef826e298ee8e34132bbf54a4a3541d}{Show\+Recovery\+Codes}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a747d96ee93fc652dd6594f3e5421e59b}{Enable\+Authenticator}} (\mbox{\hyperlink{class_enable_authenticator_view_model}{Enable\+Authenticator\+View\+Model}} model)
+\item 
+IAction\+Result \mbox{\hyperlink{class_manage_controller_a003dea8075b11499b9607a4bcbb56c6d}{Reset\+Authenticator\+Warning}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_ac8a8e268f44d9449689670f4c212523d}{Reset\+Authenticator}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a99a527b78195173b45d6fc2c5a9727ee}{Generate\+Recovery\+Codes}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_manage_controller_a8190d16bb116ba3ba31a179820cf6e00}{Generate\+Recovery\+Codes\+Warning}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_manage_controller_a09def39c6546a96fcebf156ed19136f5}{Status\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_manage_controller_af1da01c043a497a5b8fe4deedb47b5ae}\label{class_manage_controller_af1da01c043a497a5b8fe4deedb47b5ae}} 
+\index{ManageController@{ManageController}!ManageController@{ManageController}}
+\index{ManageController@{ManageController}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{ManageController()}{ManageController()}}
+{\footnotesize\ttfamily Manage\+Controller.\+Manage\+Controller (\begin{DoxyParamCaption}\item[{User\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$}]{user\+Manager,  }\item[{Sign\+In\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$}]{sign\+In\+Manager,  }\item[{\mbox{\hyperlink{interface_i_email_sender}{IEmail\+Sender}}}]{email\+Sender,  }\item[{\mbox{\hyperlink{interface_i_app_logger}{IApp\+Logger}}$<$ \mbox{\hyperlink{class_manage_controller}{Manage\+Controller}} $>$}]{logger,  }\item[{Url\+Encoder}]{url\+Encoder }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_manage_controller_aff3a5fe0f80d29c841eec2bddff8e932}\label{class_manage_controller_aff3a5fe0f80d29c841eec2bddff8e932}} 
+\index{ManageController@{ManageController}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Change\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_adf5392d06479fb98cff45444e75cc3ee}\label{class_manage_controller_adf5392d06479fb98cff45444e75cc3ee}} 
+\index{ManageController@{ManageController}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Change\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_change_password_view_model}{Change\+Password\+View\+Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a163f2dafcb854bbfa89761431d91f9c4}\label{class_manage_controller_a163f2dafcb854bbfa89761431d91f9c4}} 
+\index{ManageController@{ManageController}!Disable2fa@{Disable2fa}}
+\index{Disable2fa@{Disable2fa}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{Disable2fa()}{Disable2fa()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Disable2fa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_aea79e903d467041e95082e20b25e00af}\label{class_manage_controller_aea79e903d467041e95082e20b25e00af}} 
+\index{ManageController@{ManageController}!Disable2faWarning@{Disable2faWarning}}
+\index{Disable2faWarning@{Disable2faWarning}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{Disable2faWarning()}{Disable2faWarning()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Disable2fa\+Warning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a36a45db542d7eb1d1a7cc230ae977b0c}\label{class_manage_controller_a36a45db542d7eb1d1a7cc230ae977b0c}} 
+\index{ManageController@{ManageController}!EnableAuthenticator@{EnableAuthenticator}}
+\index{EnableAuthenticator@{EnableAuthenticator}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{EnableAuthenticator()}{EnableAuthenticator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Enable\+Authenticator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a747d96ee93fc652dd6594f3e5421e59b}\label{class_manage_controller_a747d96ee93fc652dd6594f3e5421e59b}} 
+\index{ManageController@{ManageController}!EnableAuthenticator@{EnableAuthenticator}}
+\index{EnableAuthenticator@{EnableAuthenticator}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{EnableAuthenticator()}{EnableAuthenticator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Enable\+Authenticator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_enable_authenticator_view_model}{Enable\+Authenticator\+View\+Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a7b37aafadd8a4778b4a8bdca8f2b48bf}\label{class_manage_controller_a7b37aafadd8a4778b4a8bdca8f2b48bf}} 
+\index{ManageController@{ManageController}!ExternalLogins@{ExternalLogins}}
+\index{ExternalLogins@{ExternalLogins}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{ExternalLogins()}{ExternalLogins()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+External\+Logins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a99a527b78195173b45d6fc2c5a9727ee}\label{class_manage_controller_a99a527b78195173b45d6fc2c5a9727ee}} 
+\index{ManageController@{ManageController}!GenerateRecoveryCodes@{GenerateRecoveryCodes}}
+\index{GenerateRecoveryCodes@{GenerateRecoveryCodes}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{GenerateRecoveryCodes()}{GenerateRecoveryCodes()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Generate\+Recovery\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a8190d16bb116ba3ba31a179820cf6e00}\label{class_manage_controller_a8190d16bb116ba3ba31a179820cf6e00}} 
+\index{ManageController@{ManageController}!GenerateRecoveryCodesWarning@{GenerateRecoveryCodesWarning}}
+\index{GenerateRecoveryCodesWarning@{GenerateRecoveryCodesWarning}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{GenerateRecoveryCodesWarning()}{GenerateRecoveryCodesWarning()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Generate\+Recovery\+Codes\+Warning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_ac96ba3394900908c5b1fc6125a869492}\label{class_manage_controller_ac96ba3394900908c5b1fc6125a869492}} 
+\index{ManageController@{ManageController}!LinkLogin@{LinkLogin}}
+\index{LinkLogin@{LinkLogin}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{LinkLogin()}{LinkLogin()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Link\+Login (\begin{DoxyParamCaption}\item[{string}]{provider }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_ac2d2b3b6ccfc48f3b0d19fd543f9f2f3}\label{class_manage_controller_ac2d2b3b6ccfc48f3b0d19fd543f9f2f3}} 
+\index{ManageController@{ManageController}!LinkLoginCallback@{LinkLoginCallback}}
+\index{LinkLoginCallback@{LinkLoginCallback}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{LinkLoginCallback()}{LinkLoginCallback()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Link\+Login\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a7fe2fc9ad8f938adf5e8d2595877acfe}\label{class_manage_controller_a7fe2fc9ad8f938adf5e8d2595877acfe}} 
+\index{ManageController@{ManageController}!MyAccount@{MyAccount}}
+\index{MyAccount@{MyAccount}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{MyAccount()}{MyAccount()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+My\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a9faf403e66e0d572766074c8e097879e}\label{class_manage_controller_a9faf403e66e0d572766074c8e097879e}} 
+\index{ManageController@{ManageController}!MyAccount@{MyAccount}}
+\index{MyAccount@{MyAccount}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{MyAccount()}{MyAccount()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+My\+Account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_index_view_model}{Index\+View\+Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a62b5212c87f11ffb88791a9a2e94f674}\label{class_manage_controller_a62b5212c87f11ffb88791a9a2e94f674}} 
+\index{ManageController@{ManageController}!RemoveLogin@{RemoveLogin}}
+\index{RemoveLogin@{RemoveLogin}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{RemoveLogin()}{RemoveLogin()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Remove\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_remove_login_view_model}{Remove\+Login\+View\+Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_ac8a8e268f44d9449689670f4c212523d}\label{class_manage_controller_ac8a8e268f44d9449689670f4c212523d}} 
+\index{ManageController@{ManageController}!ResetAuthenticator@{ResetAuthenticator}}
+\index{ResetAuthenticator@{ResetAuthenticator}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{ResetAuthenticator()}{ResetAuthenticator()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Reset\+Authenticator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a003dea8075b11499b9607a4bcbb56c6d}\label{class_manage_controller_a003dea8075b11499b9607a4bcbb56c6d}} 
+\index{ManageController@{ManageController}!ResetAuthenticatorWarning@{ResetAuthenticatorWarning}}
+\index{ResetAuthenticatorWarning@{ResetAuthenticatorWarning}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{ResetAuthenticatorWarning()}{ResetAuthenticatorWarning()}}
+{\footnotesize\ttfamily IAction\+Result Manage\+Controller.\+Reset\+Authenticator\+Warning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_aa86bb2ee8f0283d91f8f4f4a65e8631d}\label{class_manage_controller_aa86bb2ee8f0283d91f8f4f4a65e8631d}} 
+\index{ManageController@{ManageController}!SendVerificationEmail@{SendVerificationEmail}}
+\index{SendVerificationEmail@{SendVerificationEmail}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{SendVerificationEmail()}{SendVerificationEmail()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Send\+Verification\+Email (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_index_view_model}{Index\+View\+Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_ad26a184c10e67010e7e02ff5378f6219}\label{class_manage_controller_ad26a184c10e67010e7e02ff5378f6219}} 
+\index{ManageController@{ManageController}!SetPassword@{SetPassword}}
+\index{SetPassword@{SetPassword}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{SetPassword()}{SetPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Set\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a78d2dffd14e6bfe5e7e486275ea5130d}\label{class_manage_controller_a78d2dffd14e6bfe5e7e486275ea5130d}} 
+\index{ManageController@{ManageController}!SetPassword@{SetPassword}}
+\index{SetPassword@{SetPassword}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{SetPassword()}{SetPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Set\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_set_password_view_model}{Set\+Password\+View\+Model}}}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a6ef826e298ee8e34132bbf54a4a3541d}\label{class_manage_controller_a6ef826e298ee8e34132bbf54a4a3541d}} 
+\index{ManageController@{ManageController}!ShowRecoveryCodes@{ShowRecoveryCodes}}
+\index{ShowRecoveryCodes@{ShowRecoveryCodes}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{ShowRecoveryCodes()}{ShowRecoveryCodes()}}
+{\footnotesize\ttfamily IAction\+Result Manage\+Controller.\+Show\+Recovery\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_manage_controller_a0880bf03b96569bd99b440a3f2b7adf3}\label{class_manage_controller_a0880bf03b96569bd99b440a3f2b7adf3}} 
+\index{ManageController@{ManageController}!TwoFactorAuthentication@{TwoFactorAuthentication}}
+\index{TwoFactorAuthentication@{TwoFactorAuthentication}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{TwoFactorAuthentication()}{TwoFactorAuthentication()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Manage\+Controller.\+Two\+Factor\+Authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_manage_controller_a09def39c6546a96fcebf156ed19136f5}\label{class_manage_controller_a09def39c6546a96fcebf156ed19136f5}} 
+\index{ManageController@{ManageController}!StatusMessage@{StatusMessage}}
+\index{StatusMessage@{StatusMessage}!ManageController@{ManageController}}
+\doxysubsubsection{\texorpdfstring{StatusMessage}{StatusMessage}}
+{\footnotesize\ttfamily string Manage\+Controller.\+Status\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Web/\+Controllers/\mbox{\hyperlink{_manage_controller_8cs}{Manage\+Controller.\+cs}}\end{DoxyCompactItemize}

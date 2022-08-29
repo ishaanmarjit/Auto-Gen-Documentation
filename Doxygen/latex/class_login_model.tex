@@ -1,0 +1,89 @@
+\hypertarget{class_login_model}{}\doxysection{Login\+Model Class Reference}
+\label{class_login_model}\index{LoginModel@{LoginModel}}
+Inheritance diagram for Login\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_login_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_login_model_1_1_input_model}{Input\+Model}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_login_model_a693399af9bb713aa1e6a21d1642f833e}{Login\+Model}} (Sign\+In\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$ sign\+In\+Manager, ILogger$<$ \mbox{\hyperlink{class_login_model}{Login\+Model}} $>$ logger, \mbox{\hyperlink{interface_i_basket_service}{IBasket\+Service}} basket\+Service)
+\item 
+async Task \mbox{\hyperlink{class_login_model_ac37ea1d2cd2b9bfaa0f69dae3de8ab12}{On\+Get\+Async}} (string? return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_login_model_a85eda3a5d0a64c972b5454d6b82bfc06}{On\+Post\+Async}} (string? return\+Url=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_login_model_1_1_input_model}{Input\+Model}} \mbox{\hyperlink{class_login_model_a0378c307980585b475a3171f47cb8266}{Input}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+IList$<$ Authentication\+Scheme $>$ \mbox{\hyperlink{class_login_model_a820e7fc676cbe40149d9648000033494}{External\+Logins}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_login_model_ae67d5f9449fbeb2ca5bf208a0fe52ca2}{Return\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_login_model_ae650c76ca4a9ce6226c3d07ad5f56f2c}{Error\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_login_model_a693399af9bb713aa1e6a21d1642f833e}\label{class_login_model_a693399af9bb713aa1e6a21d1642f833e}} 
+\index{LoginModel@{LoginModel}!LoginModel@{LoginModel}}
+\index{LoginModel@{LoginModel}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{LoginModel()}{LoginModel()}}
+{\footnotesize\ttfamily Login\+Model.\+Login\+Model (\begin{DoxyParamCaption}\item[{Sign\+In\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$}]{sign\+In\+Manager,  }\item[{ILogger$<$ \mbox{\hyperlink{class_login_model}{Login\+Model}} $>$}]{logger,  }\item[{\mbox{\hyperlink{interface_i_basket_service}{IBasket\+Service}}}]{basket\+Service }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_login_model_ac37ea1d2cd2b9bfaa0f69dae3de8ab12}\label{class_login_model_ac37ea1d2cd2b9bfaa0f69dae3de8ab12}} 
+\index{LoginModel@{LoginModel}!OnGetAsync@{OnGetAsync}}
+\index{OnGetAsync@{OnGetAsync}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{OnGetAsync()}{OnGetAsync()}}
+{\footnotesize\ttfamily async Task Login\+Model.\+On\+Get\+Async (\begin{DoxyParamCaption}\item[{string?}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_login_model_a85eda3a5d0a64c972b5454d6b82bfc06}\label{class_login_model_a85eda3a5d0a64c972b5454d6b82bfc06}} 
+\index{LoginModel@{LoginModel}!OnPostAsync@{OnPostAsync}}
+\index{OnPostAsync@{OnPostAsync}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{OnPostAsync()}{OnPostAsync()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Login\+Model.\+On\+Post\+Async (\begin{DoxyParamCaption}\item[{string?}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_login_model_ae650c76ca4a9ce6226c3d07ad5f56f2c}\label{class_login_model_ae650c76ca4a9ce6226c3d07ad5f56f2c}} 
+\index{LoginModel@{LoginModel}!ErrorMessage@{ErrorMessage}}
+\index{ErrorMessage@{ErrorMessage}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{ErrorMessage}{ErrorMessage}}
+{\footnotesize\ttfamily string Login\+Model.\+Error\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_login_model_a820e7fc676cbe40149d9648000033494}\label{class_login_model_a820e7fc676cbe40149d9648000033494}} 
+\index{LoginModel@{LoginModel}!ExternalLogins@{ExternalLogins}}
+\index{ExternalLogins@{ExternalLogins}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{ExternalLogins}{ExternalLogins}}
+{\footnotesize\ttfamily IList$<$Authentication\+Scheme$>$ Login\+Model.\+External\+Logins\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_login_model_a0378c307980585b475a3171f47cb8266}\label{class_login_model_a0378c307980585b475a3171f47cb8266}} 
+\index{LoginModel@{LoginModel}!Input@{Input}}
+\index{Input@{Input}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{Input}{Input}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_login_model_1_1_input_model}{Input\+Model}} Login\+Model.\+Input\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_login_model_ae67d5f9449fbeb2ca5bf208a0fe52ca2}\label{class_login_model_ae67d5f9449fbeb2ca5bf208a0fe52ca2}} 
+\index{LoginModel@{LoginModel}!ReturnUrl@{ReturnUrl}}
+\index{ReturnUrl@{ReturnUrl}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{ReturnUrl}{ReturnUrl}}
+{\footnotesize\ttfamily string Login\+Model.\+Return\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Web/\+Areas/\+Identity/\+Pages/\+Account/\mbox{\hyperlink{_login_8cshtml_8cs}{Login.\+cshtml.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,191 @@
+\hypertarget{class_catalog_item}{}\doxysection{Catalog\+Item Class Reference}
+\label{class_catalog_item}\index{CatalogItem@{CatalogItem}}
+Inheritance diagram for Catalog\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_catalog_item}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catalog_item_a751cba20561c2c9408e82c13a2b7a147}{Catalog\+Item}} (int catalog\+Type\+Id, int catalog\+Brand\+Id, string description, string name, decimal price, string picture\+Uri)
+\item 
+void \mbox{\hyperlink{class_catalog_item_a05e02478237823f1033f91bb3e573d76}{Update\+Details}} (string name, string description, decimal price)
+\item 
+void \mbox{\hyperlink{class_catalog_item_ad39814cbceee1226d2667f5da3f5a5c9}{Update\+Brand}} (int catalog\+Brand\+Id)
+\item 
+void \mbox{\hyperlink{class_catalog_item_ae7cee1384893550e854f6ce503a10dde}{Update\+Type}} (int catalog\+Type\+Id)
+\item 
+void \mbox{\hyperlink{class_catalog_item_a0058550fd92516fed042eabe17b747be}{Update\+Picture\+Uri}} (string picture\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_catalog_item_a99645b6466a9a8b1f3da612f7fc5939c}{Is\+Valid\+Image}} (string picture\+Name, string picture\+Base64)
+\item 
+static async Task$<$ string $>$ \mbox{\hyperlink{class_catalog_item_a349f20d8729d2941308a816e641c5ae5}{Data\+To\+Base64}} (IFile\+List\+Entry file\+Item)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_catalog_item_a7c5e5a5bcdf413197250b0f032503ae1}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_catalog_item_acea48ab12b5a9d32ab515f8b945457f7}{Description}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+decimal \mbox{\hyperlink{class_catalog_item_ab4281ab0574ab9f08866cbaf74e8c0e9}{Price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_catalog_item_a91004d1cd459d49de556b855a030750c}{Picture\+Uri}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_catalog_item_ac1f23f2ff3c575baf85a33094856577f}{Catalog\+Type\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_catalog_type}{Catalog\+Type}} \mbox{\hyperlink{class_catalog_item_a16a0afe3a25f3743add22987d12bf5a4}{Catalog\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_catalog_item_a53efdc025fadc40667e90b78192a1aa6}{Catalog\+Brand\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_catalog_brand}{Catalog\+Brand}} \mbox{\hyperlink{class_catalog_item_a001b6b126fe03a004dea68b69614272a}{Catalog\+Brand}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_catalog_item_ab05058f20ea5c11ae4274c32a85e002d}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_catalog_item_a20333bea9a19333bfa38a648836cb35d}{Catalog\+Type}} = \char`\"{}Not\+Set\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_catalog_item_a7d4505009f6e3dfa562717917b688bbf}{Catalog\+Brand}} = \char`\"{}Not\+Set\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_catalog_item_a09da2bdf955e471a7605e1a4643ecd63}{Picture\+Base64}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_catalog_item_ae5ac3f2827cdc8c69bc2347585990f6f}{Picture\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_catalog_item_a751cba20561c2c9408e82c13a2b7a147}\label{class_catalog_item_a751cba20561c2c9408e82c13a2b7a147}} 
+\index{CatalogItem@{CatalogItem}!CatalogItem@{CatalogItem}}
+\index{CatalogItem@{CatalogItem}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{CatalogItem()}{CatalogItem()}}
+{\footnotesize\ttfamily Catalog\+Item.\+Catalog\+Item (\begin{DoxyParamCaption}\item[{int}]{catalog\+Type\+Id,  }\item[{int}]{catalog\+Brand\+Id,  }\item[{string}]{description,  }\item[{string}]{name,  }\item[{decimal}]{price,  }\item[{string}]{picture\+Uri }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catalog_item_a349f20d8729d2941308a816e641c5ae5}\label{class_catalog_item_a349f20d8729d2941308a816e641c5ae5}} 
+\index{CatalogItem@{CatalogItem}!DataToBase64@{DataToBase64}}
+\index{DataToBase64@{DataToBase64}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{DataToBase64()}{DataToBase64()}}
+{\footnotesize\ttfamily static async Task$<$string$>$ Catalog\+Item.\+Data\+To\+Base64 (\begin{DoxyParamCaption}\item[{IFile\+List\+Entry}]{file\+Item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_catalog_item_a99645b6466a9a8b1f3da612f7fc5939c}\label{class_catalog_item_a99645b6466a9a8b1f3da612f7fc5939c}} 
+\index{CatalogItem@{CatalogItem}!IsValidImage@{IsValidImage}}
+\index{IsValidImage@{IsValidImage}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{IsValidImage()}{IsValidImage()}}
+{\footnotesize\ttfamily static string Catalog\+Item.\+Is\+Valid\+Image (\begin{DoxyParamCaption}\item[{string}]{picture\+Name,  }\item[{string}]{picture\+Base64 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_catalog_item_ad39814cbceee1226d2667f5da3f5a5c9}\label{class_catalog_item_ad39814cbceee1226d2667f5da3f5a5c9}} 
+\index{CatalogItem@{CatalogItem}!UpdateBrand@{UpdateBrand}}
+\index{UpdateBrand@{UpdateBrand}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{UpdateBrand()}{UpdateBrand()}}
+{\footnotesize\ttfamily void Catalog\+Item.\+Update\+Brand (\begin{DoxyParamCaption}\item[{int}]{catalog\+Brand\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_catalog_item_a05e02478237823f1033f91bb3e573d76}\label{class_catalog_item_a05e02478237823f1033f91bb3e573d76}} 
+\index{CatalogItem@{CatalogItem}!UpdateDetails@{UpdateDetails}}
+\index{UpdateDetails@{UpdateDetails}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{UpdateDetails()}{UpdateDetails()}}
+{\footnotesize\ttfamily void Catalog\+Item.\+Update\+Details (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{description,  }\item[{decimal}]{price }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_catalog_item_a0058550fd92516fed042eabe17b747be}\label{class_catalog_item_a0058550fd92516fed042eabe17b747be}} 
+\index{CatalogItem@{CatalogItem}!UpdatePictureUri@{UpdatePictureUri}}
+\index{UpdatePictureUri@{UpdatePictureUri}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{UpdatePictureUri()}{UpdatePictureUri()}}
+{\footnotesize\ttfamily void Catalog\+Item.\+Update\+Picture\+Uri (\begin{DoxyParamCaption}\item[{string}]{picture\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_catalog_item_ae7cee1384893550e854f6ce503a10dde}\label{class_catalog_item_ae7cee1384893550e854f6ce503a10dde}} 
+\index{CatalogItem@{CatalogItem}!UpdateType@{UpdateType}}
+\index{UpdateType@{UpdateType}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{UpdateType()}{UpdateType()}}
+{\footnotesize\ttfamily void Catalog\+Item.\+Update\+Type (\begin{DoxyParamCaption}\item[{int}]{catalog\+Type\+Id }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_catalog_item_a001b6b126fe03a004dea68b69614272a}\label{class_catalog_item_a001b6b126fe03a004dea68b69614272a}} 
+\index{CatalogItem@{CatalogItem}!CatalogBrand@{CatalogBrand}}
+\index{CatalogBrand@{CatalogBrand}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{CatalogBrand}{CatalogBrand}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_catalog_brand}{Catalog\+Brand}} Catalog\+Item.\+Catalog\+Brand\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_catalog_item_a7d4505009f6e3dfa562717917b688bbf}\label{class_catalog_item_a7d4505009f6e3dfa562717917b688bbf}} 
+\index{CatalogItem@{CatalogItem}!CatalogBrand@{CatalogBrand}}
+\index{CatalogBrand@{CatalogBrand}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{CatalogBrand}{CatalogBrand}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Catalog\+Item.\+Catalog\+Brand = \char`\"{}Not\+Set\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_a53efdc025fadc40667e90b78192a1aa6}\label{class_catalog_item_a53efdc025fadc40667e90b78192a1aa6}} 
+\index{CatalogItem@{CatalogItem}!CatalogBrandId@{CatalogBrandId}}
+\index{CatalogBrandId@{CatalogBrandId}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{CatalogBrandId}{CatalogBrandId}}
+{\footnotesize\ttfamily int Catalog\+Item.\+Catalog\+Brand\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_a16a0afe3a25f3743add22987d12bf5a4}\label{class_catalog_item_a16a0afe3a25f3743add22987d12bf5a4}} 
+\index{CatalogItem@{CatalogItem}!CatalogType@{CatalogType}}
+\index{CatalogType@{CatalogType}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{CatalogType}{CatalogType}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_catalog_type}{Catalog\+Type}} Catalog\+Item.\+Catalog\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_catalog_item_a20333bea9a19333bfa38a648836cb35d}\label{class_catalog_item_a20333bea9a19333bfa38a648836cb35d}} 
+\index{CatalogItem@{CatalogItem}!CatalogType@{CatalogType}}
+\index{CatalogType@{CatalogType}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{CatalogType}{CatalogType}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Catalog\+Item.\+Catalog\+Type = \char`\"{}Not\+Set\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_ac1f23f2ff3c575baf85a33094856577f}\label{class_catalog_item_ac1f23f2ff3c575baf85a33094856577f}} 
+\index{CatalogItem@{CatalogItem}!CatalogTypeId@{CatalogTypeId}}
+\index{CatalogTypeId@{CatalogTypeId}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{CatalogTypeId}{CatalogTypeId}}
+{\footnotesize\ttfamily int Catalog\+Item.\+Catalog\+Type\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_acea48ab12b5a9d32ab515f8b945457f7}\label{class_catalog_item_acea48ab12b5a9d32ab515f8b945457f7}} 
+\index{CatalogItem@{CatalogItem}!Description@{Description}}
+\index{Description@{Description}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily string Catalog\+Item.\+Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_ab05058f20ea5c11ae4274c32a85e002d}\label{class_catalog_item_ab05058f20ea5c11ae4274c32a85e002d}} 
+\index{CatalogItem@{CatalogItem}!Id@{Id}}
+\index{Id@{Id}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily int Catalog\+Item.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_a7c5e5a5bcdf413197250b0f032503ae1}\label{class_catalog_item_a7c5e5a5bcdf413197250b0f032503ae1}} 
+\index{CatalogItem@{CatalogItem}!Name@{Name}}
+\index{Name@{Name}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Catalog\+Item.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_a09da2bdf955e471a7605e1a4643ecd63}\label{class_catalog_item_a09da2bdf955e471a7605e1a4643ecd63}} 
+\index{CatalogItem@{CatalogItem}!PictureBase64@{PictureBase64}}
+\index{PictureBase64@{PictureBase64}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{PictureBase64}{PictureBase64}}
+{\footnotesize\ttfamily string Catalog\+Item.\+Picture\+Base64\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_ae5ac3f2827cdc8c69bc2347585990f6f}\label{class_catalog_item_ae5ac3f2827cdc8c69bc2347585990f6f}} 
+\index{CatalogItem@{CatalogItem}!PictureName@{PictureName}}
+\index{PictureName@{PictureName}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{PictureName}{PictureName}}
+{\footnotesize\ttfamily string Catalog\+Item.\+Picture\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_a91004d1cd459d49de556b855a030750c}\label{class_catalog_item_a91004d1cd459d49de556b855a030750c}} 
+\index{CatalogItem@{CatalogItem}!PictureUri@{PictureUri}}
+\index{PictureUri@{PictureUri}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{PictureUri}{PictureUri}}
+{\footnotesize\ttfamily string Catalog\+Item.\+Picture\+Uri\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_catalog_item_ab4281ab0574ab9f08866cbaf74e8c0e9}\label{class_catalog_item_ab4281ab0574ab9f08866cbaf74e8c0e9}} 
+\index{CatalogItem@{CatalogItem}!Price@{Price}}
+\index{Price@{Price}!CatalogItem@{CatalogItem}}
+\doxysubsubsection{\texorpdfstring{Price}{Price}}
+{\footnotesize\ttfamily decimal Catalog\+Item.\+Price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Application\+Core/\+Entities/\mbox{\hyperlink{_application_core_2_entities_2_catalog_item_8cs}{Catalog\+Item.\+cs}}\end{DoxyCompactItemize}

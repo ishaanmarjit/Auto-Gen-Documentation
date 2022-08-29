@@ -1,0 +1,66 @@
+\hypertarget{class_cached_catalog_view_model_service}{}\doxysection{Cached\+Catalog\+View\+Model\+Service Class Reference}
+\label{class_cached_catalog_view_model_service}\index{CachedCatalogViewModelService@{CachedCatalogViewModelService}}
+Inheritance diagram for Cached\+Catalog\+View\+Model\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cached_catalog_view_model_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cached_catalog_view_model_service_a29b1d9190043f9a74d7e686ab19a6beb}{Cached\+Catalog\+View\+Model\+Service}} (IMemory\+Cache cache, \mbox{\hyperlink{class_catalog_view_model_service}{Catalog\+View\+Model\+Service}} catalog\+View\+Model\+Service)
+\item 
+async Task$<$ IEnumerable$<$ Select\+List\+Item $>$ $>$ \mbox{\hyperlink{class_cached_catalog_view_model_service_ab3cad7e280a6cefd014c52e1510230f8}{Get\+Brands}} ()
+\item 
+async Task$<$ \mbox{\hyperlink{class_catalog_index_view_model}{Catalog\+Index\+View\+Model}} $>$ \mbox{\hyperlink{class_cached_catalog_view_model_service_a577ecfce8d6a0fcf99697d2de04b934b}{Get\+Catalog\+Items}} (int page\+Index, int items\+Page, int? brand\+Id, int? type\+Id)
+\item 
+async Task$<$ IEnumerable$<$ Select\+List\+Item $>$ $>$ \mbox{\hyperlink{class_cached_catalog_view_model_service_ab70228fd621c821514b7656fe4a51bc7}{Get\+Types}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cached_catalog_view_model_service_a29b1d9190043f9a74d7e686ab19a6beb}\label{class_cached_catalog_view_model_service_a29b1d9190043f9a74d7e686ab19a6beb}} 
+\index{CachedCatalogViewModelService@{CachedCatalogViewModelService}!CachedCatalogViewModelService@{CachedCatalogViewModelService}}
+\index{CachedCatalogViewModelService@{CachedCatalogViewModelService}!CachedCatalogViewModelService@{CachedCatalogViewModelService}}
+\doxysubsubsection{\texorpdfstring{CachedCatalogViewModelService()}{CachedCatalogViewModelService()}}
+{\footnotesize\ttfamily Cached\+Catalog\+View\+Model\+Service.\+Cached\+Catalog\+View\+Model\+Service (\begin{DoxyParamCaption}\item[{IMemory\+Cache}]{cache,  }\item[{\mbox{\hyperlink{class_catalog_view_model_service}{Catalog\+View\+Model\+Service}}}]{catalog\+View\+Model\+Service }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cached_catalog_view_model_service_ab3cad7e280a6cefd014c52e1510230f8}\label{class_cached_catalog_view_model_service_ab3cad7e280a6cefd014c52e1510230f8}} 
+\index{CachedCatalogViewModelService@{CachedCatalogViewModelService}!GetBrands@{GetBrands}}
+\index{GetBrands@{GetBrands}!CachedCatalogViewModelService@{CachedCatalogViewModelService}}
+\doxysubsubsection{\texorpdfstring{GetBrands()}{GetBrands()}}
+{\footnotesize\ttfamily async Task$<$IEnumerable$<$Select\+List\+Item$>$ $>$ Cached\+Catalog\+View\+Model\+Service.\+Get\+Brands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_view_model_service_a5c3af405b6657181200c244b58402de3}{ICatalog\+View\+Model\+Service}}.
+
+\mbox{\Hypertarget{class_cached_catalog_view_model_service_a577ecfce8d6a0fcf99697d2de04b934b}\label{class_cached_catalog_view_model_service_a577ecfce8d6a0fcf99697d2de04b934b}} 
+\index{CachedCatalogViewModelService@{CachedCatalogViewModelService}!GetCatalogItems@{GetCatalogItems}}
+\index{GetCatalogItems@{GetCatalogItems}!CachedCatalogViewModelService@{CachedCatalogViewModelService}}
+\doxysubsubsection{\texorpdfstring{GetCatalogItems()}{GetCatalogItems()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_catalog_index_view_model}{Catalog\+Index\+View\+Model}}$>$ Cached\+Catalog\+View\+Model\+Service.\+Get\+Catalog\+Items (\begin{DoxyParamCaption}\item[{int}]{page\+Index,  }\item[{int}]{items\+Page,  }\item[{int?}]{brand\+Id,  }\item[{int?}]{type\+Id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_view_model_service_a6e7a31bee82cc4197ad821b67350209a}{ICatalog\+View\+Model\+Service}}.
+
+\mbox{\Hypertarget{class_cached_catalog_view_model_service_ab70228fd621c821514b7656fe4a51bc7}\label{class_cached_catalog_view_model_service_ab70228fd621c821514b7656fe4a51bc7}} 
+\index{CachedCatalogViewModelService@{CachedCatalogViewModelService}!GetTypes@{GetTypes}}
+\index{GetTypes@{GetTypes}!CachedCatalogViewModelService@{CachedCatalogViewModelService}}
+\doxysubsubsection{\texorpdfstring{GetTypes()}{GetTypes()}}
+{\footnotesize\ttfamily async Task$<$IEnumerable$<$Select\+List\+Item$>$ $>$ Cached\+Catalog\+View\+Model\+Service.\+Get\+Types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_view_model_service_a776ea747105e3084bedd93f9e6e72e19}{ICatalog\+View\+Model\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Web/\+Services/\mbox{\hyperlink{_cached_catalog_view_model_service_8cs}{Cached\+Catalog\+View\+Model\+Service.\+cs}}\end{DoxyCompactItemize}

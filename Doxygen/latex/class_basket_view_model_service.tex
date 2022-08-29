@@ -1,0 +1,66 @@
+\hypertarget{class_basket_view_model_service}{}\doxysection{Basket\+View\+Model\+Service Class Reference}
+\label{class_basket_view_model_service}\index{BasketViewModelService@{BasketViewModelService}}
+Inheritance diagram for Basket\+View\+Model\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_basket_view_model_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_basket_view_model_service_adfdc77195d0f3cf0e13316920d8400c0}{Basket\+View\+Model\+Service}} (\mbox{\hyperlink{interface_i_repository}{IRepository}}$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$ basket\+Repository, \mbox{\hyperlink{interface_i_repository}{IRepository}}$<$ \mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} $>$ item\+Repository, \mbox{\hyperlink{interface_i_uri_composer}{IUri\+Composer}} uri\+Composer, \mbox{\hyperlink{interface_i_basket_query_service}{IBasket\+Query\+Service}} basket\+Query\+Service)
+\item 
+async Task$<$ \mbox{\hyperlink{class_basket_view_model}{Basket\+View\+Model}} $>$ \mbox{\hyperlink{class_basket_view_model_service_a697727c71ca9fb89ef806c90540daa68}{Get\+Or\+Create\+Basket\+For\+User}} (string user\+Name)
+\item 
+async Task$<$ \mbox{\hyperlink{class_basket_view_model}{Basket\+View\+Model}} $>$ \mbox{\hyperlink{class_basket_view_model_service_a1656ee1993b6d2e35f0fd59140b48371}{Map}} (\mbox{\hyperlink{class_basket}{Basket}} basket)
+\item 
+async Task$<$ int $>$ \mbox{\hyperlink{class_basket_view_model_service_a5270f510088f9cfe7f80cb65c2408c0a}{Count\+Total\+Basket\+Items}} (string username)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_basket_view_model_service_adfdc77195d0f3cf0e13316920d8400c0}\label{class_basket_view_model_service_adfdc77195d0f3cf0e13316920d8400c0}} 
+\index{BasketViewModelService@{BasketViewModelService}!BasketViewModelService@{BasketViewModelService}}
+\index{BasketViewModelService@{BasketViewModelService}!BasketViewModelService@{BasketViewModelService}}
+\doxysubsubsection{\texorpdfstring{BasketViewModelService()}{BasketViewModelService()}}
+{\footnotesize\ttfamily Basket\+View\+Model\+Service.\+Basket\+View\+Model\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_repository}{IRepository}}$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$}]{basket\+Repository,  }\item[{\mbox{\hyperlink{interface_i_repository}{IRepository}}$<$ \mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} $>$}]{item\+Repository,  }\item[{\mbox{\hyperlink{interface_i_uri_composer}{IUri\+Composer}}}]{uri\+Composer,  }\item[{\mbox{\hyperlink{interface_i_basket_query_service}{IBasket\+Query\+Service}}}]{basket\+Query\+Service }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_basket_view_model_service_a5270f510088f9cfe7f80cb65c2408c0a}\label{class_basket_view_model_service_a5270f510088f9cfe7f80cb65c2408c0a}} 
+\index{BasketViewModelService@{BasketViewModelService}!CountTotalBasketItems@{CountTotalBasketItems}}
+\index{CountTotalBasketItems@{CountTotalBasketItems}!BasketViewModelService@{BasketViewModelService}}
+\doxysubsubsection{\texorpdfstring{CountTotalBasketItems()}{CountTotalBasketItems()}}
+{\footnotesize\ttfamily async Task$<$int$>$ Basket\+View\+Model\+Service.\+Count\+Total\+Basket\+Items (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_basket_view_model_service_a57a3e6346e44bbd1820ce1eab99342da}{IBasket\+View\+Model\+Service}}.
+
+\mbox{\Hypertarget{class_basket_view_model_service_a697727c71ca9fb89ef806c90540daa68}\label{class_basket_view_model_service_a697727c71ca9fb89ef806c90540daa68}} 
+\index{BasketViewModelService@{BasketViewModelService}!GetOrCreateBasketForUser@{GetOrCreateBasketForUser}}
+\index{GetOrCreateBasketForUser@{GetOrCreateBasketForUser}!BasketViewModelService@{BasketViewModelService}}
+\doxysubsubsection{\texorpdfstring{GetOrCreateBasketForUser()}{GetOrCreateBasketForUser()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_basket_view_model}{Basket\+View\+Model}}$>$ Basket\+View\+Model\+Service.\+Get\+Or\+Create\+Basket\+For\+User (\begin{DoxyParamCaption}\item[{string}]{user\+Name }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_basket_view_model_service_a97a8ffc48eda0d26cc666c806d72a091}{IBasket\+View\+Model\+Service}}.
+
+\mbox{\Hypertarget{class_basket_view_model_service_a1656ee1993b6d2e35f0fd59140b48371}\label{class_basket_view_model_service_a1656ee1993b6d2e35f0fd59140b48371}} 
+\index{BasketViewModelService@{BasketViewModelService}!Map@{Map}}
+\index{Map@{Map}!BasketViewModelService@{BasketViewModelService}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_basket_view_model}{Basket\+View\+Model}}$>$ Basket\+View\+Model\+Service.\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_basket}{Basket}}}]{basket }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_basket_view_model_service_aca9b063981e26612ad65c8d58b160370}{IBasket\+View\+Model\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Web/\+Services/\mbox{\hyperlink{_basket_view_model_service_8cs}{Basket\+View\+Model\+Service.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\href{https://github.com/dotnet-architecture/eShopOnWeb/actions}{\texttt{ }}\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md0}{}\doxysection{Microsoft e\+Shop\+On\+Web ASP.\+NET Core Reference Application}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md0}
+Sample ASP.\+NET Core reference application, powered by \mbox{\hyperlink{namespace_microsoft}{Microsoft}}, demonstrating a single-\/process (monolithic) application architecture and deployment model. If you\textquotesingle{}re new to .NET development, read the \href{https://github.com/dotnet-architecture/eShopOnWeb/wiki/Getting-Started-for-Beginners}{\texttt{ Getting Started for Beginners}} guide.
+
+A list of Frequently Asked Questions about this repository can be found \href{https://github.com/dotnet-architecture/eShopOnWeb/wiki/Frequently-Asked-Questions}{\texttt{ here}}.\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{Overview Video}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md1}
+\href{https://twitter.com/ardalis}{\texttt{ Steve \char`\"{}ardalis\char`\"{} Smith}} recorded \href{https://www.youtube.com/watch?v=vRZ8ucGac8M&ab_channel=Ardalis}{\texttt{ a live stream providing an overview of the e\+Shop\+On\+Web reference app}} in October 2020.\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{e\+Book}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md2}
+This reference application is meant to support the free .PDF download ebook\+: \href{https://aka.ms/webappebook}{\texttt{ Architecting Modern Web Applications with ASP.\+NET Core and Azure}}, updated to {\bfseries{ASP.\+NET Core 6.\+0}}. \href{https://dotnet.microsoft.com/learn/web/aspnet-architecture}{\texttt{ Also available in e\+Pub/mobi formats}}.
+
+You can also read the book in online pages at the .NET docs here\+: \href{https://docs.microsoft.com/dotnet/architecture/modern-web-apps-azure/}{\texttt{ https\+://docs.\+microsoft.\+com/dotnet/architecture/modern-\/web-\/apps-\/azure/}}
+
+\href{https://dotnet.microsoft.com/learn/web/aspnet-architecture}{\texttt{ }}
+
+The {\bfseries{e\+Shop\+On\+Web}} sample is related to the \href{https://github.com/dotnet/eShopOnContainers}{\texttt{ e\+Shop\+On\+Containers}} sample application which, in that case, focuses on a microservices/containers-\/based application architecture. However, {\bfseries{e\+Shop\+On\+Web}} is much simpler in regards to its current functionality and focuses on traditional Web Application Development with a single deployment.
+
+The goal for this sample is to demonstrate some of the principles and patterns described in the \href{https://aka.ms/webappebook}{\texttt{ e\+Book}}. It is not meant to be an e\+Commerce reference application, and as such it does not implement many features that would be obvious and/or essential to a real e\+Commerce application.
+
+\begin{quote}
+\#\#\# VERSIONS \end{quote}
+\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md3}{}\doxyparagraph{The $<$tt$>$main$<$/tt$>$ branch is currently running ASP.\+NET Core 6.\+0.}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md3}
+\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md4}{}\doxyparagraph{Older versions are tagged.}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md4}
+\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Topics (e\+Book TOC)}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Introduction
+\item Characteristics of Modern Web Applications
+\item Choosing Between Traditional Web Apps and SPAs
+\item Architectural Principles
+\item Common Web Application Architectures
+\item Common Client Side Technologies
+\item Developing ASP.\+NET Core MVC Apps
+\item Working with Data in ASP.\+NET Core Apps
+\item Testing ASP.\+NET Core MVC Apps
+\item Development Process for Azure-\/\+Hosted ASP.\+NET Core Apps
+\item Azure Hosting Recommendations for ASP.\+NET Core Web Apps
+\end{DoxyItemize}\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{Running the sample}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md6}
+The store\textquotesingle{}s home page should look like this\+:
+
+
+
+Most of the site\textquotesingle{}s functionality works with just the web application running. However, the site\textquotesingle{}s Admin page relies on Blazor Web\+Assembly running in the browser, and it must communicate with the server using the site\textquotesingle{}s Public\+Api web application. You\textquotesingle{}ll need to also run this project. You can configure Visual Studio to start multiple projects, or just go to the Public\+Api folder in a terminal window and run {\ttfamily dotnet run} from there. After that from the Web folder you should run {\ttfamily dotnet run -\/-\/launch-\/profile Web}. Now you should be able to browse to {\ttfamily \href{https://localhost:5001/}{\texttt{ https\+://localhost\+:5001/}}}. Note that if you use this approach, you\textquotesingle{}ll need to stop the application manually in order to build the solution (otherwise you\textquotesingle{}ll get file locking errors).
+
+After cloning or downloading the sample you must setup your database. To use the sample with a persistent database, you will need to run its Entity Framework Core migrations before you will be able to run the app.
+
+You can also run the samples in Docker (see below).\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{Configuring the sample to use SQL Server}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyEnumerate}
+\item By default, the project uses a real database. If you want an in memory database, you can add in {\ttfamily appsettings.\+json}
+
+\`{}\`{}\`{}json \{ \char`\"{}\+Use\+Only\+In\+Memory\+Database\char`\"{}\+: true \}
+
+\`{}\`{}\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Ensure your connection strings in {\ttfamily appsettings.\+json} point to a local SQL Server instance.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Ensure the tool EF was already installed. You can find some help \href{https://docs.microsoft.com/ef/core/miscellaneous/cli/dotnet}{\texttt{ here}}
+
+\`{}\`{}\`{} dotnet tool update --global dotnet-\/ef \`{}\`{}\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Open a command prompt in the Web folder and execute the following commands\+:
+
+\`{}\`{}\`{} dotnet restore dotnet tool restore dotnet ef database update -\/c catalogcontext -\/p ../\+Infrastructure/\+Infrastructure.csproj -\/s Web.\+csproj dotnet ef database update -\/c appidentitydbcontext -\/p ../\+Infrastructure/\+Infrastructure.csproj -\/s Web.\+csproj \`{}\`{}\`{}
+
+These commands will create two separate databases, one for the store\textquotesingle{}s catalog data and shopping cart information, and one for the app\textquotesingle{}s user credentials and identity data.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Run the application.
+
+The first time you run the application, it will seed both databases with data such that you should see products in the store, and you should be able to log in using the \href{mailto:demouser@microsoft.com}{\texttt{ demouser@microsoft.\+com}} account.
+
+Note\+: If you need to create migrations, you can use these commands\+:
+
+\`{}\`{}\`{} -- create migration (from Web folder CLI) dotnet ef migrations add \mbox{\hyperlink{class_initial_model}{Initial\+Model}} --context catalogcontext -\/p ../\+Infrastructure/\+Infrastructure.csproj -\/s Web.\+csproj -\/o Data/\+Migrations
+
+dotnet ef migrations add \mbox{\hyperlink{class_initial_identity_model}{Initial\+Identity\+Model}} --context appidentitydbcontext -\/p ../\+Infrastructure/\+Infrastructure.csproj -\/s Web.\+csproj -\/o Identity/\+Migrations \`{}\`{}\`{}
+\end{DoxyEnumerate}\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{Running the sample using Docker}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md8}
+You can run the Web sample by running these commands from the root folder (where the .sln file is located)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{docker-\/compose build}
+\DoxyCodeLine{docker-\/compose up}
+
+\end{DoxyCode}
+
+
+You should be able to make requests to localhost\+:5106 for the Web project, and localhost\+:5200 for the Public API project once these commands complete. If you have any problems, especially with login, try from a new guest or incognito browser instance.
+
+You can also run the applications by using the instructions located in their {\ttfamily Dockerfile} file in the root of each project. Again, run these commands from the root of the solution (where the .sln file is located).\hypertarget{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{Community Extensions}\label{md__c___users_ishaan_marjit__desktop__maverick__dev__prod_e_shop_on_web__r_e_a_d_m_e_autotoc_md9}
+We have some great contributions from the community, and while these aren\textquotesingle{}t maintained by \mbox{\hyperlink{namespace_microsoft}{Microsoft}} we still want to highlight them.
+
+\href{https://github.com/VBAndCs/eShopOnWeb_VB.NET}{\texttt{ e\+Shop\+On\+Web VB.\+NET}} by Mohammad Hamdy Ghanem 

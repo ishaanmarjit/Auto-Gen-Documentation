@@ -1,0 +1,100 @@
+\hypertarget{class_basket}{}\doxysection{Basket Class Reference}
+\label{class_basket}\index{Basket@{Basket}}
+Inheritance diagram for Basket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_basket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_basket_ab4faf946600ad9bf2413c7c2d9ddf735}{Basket}} (string buyer\+Id)
+\item 
+void \mbox{\hyperlink{class_basket_a0b56e8900c9c05d0322772b82ad667e2}{Add\+Item}} (int catalog\+Item\+Id, decimal unit\+Price, int quantity=1)
+\item 
+void \mbox{\hyperlink{class_basket_af4f0e559cba727d3fb966fbd090ca6cc}{Remove\+Empty\+Items}} ()
+\item 
+void \mbox{\hyperlink{class_basket_af0a81a2a34ec8c96bae55c76f88803a0}{Set\+New\+Buyer\+Id}} (string buyer\+Id)
+\item 
+\mbox{\hyperlink{class_basket_adb79400de43f63003e37aad7aa60bd88}{Basket}} (\mbox{\hyperlink{interface_i_basket_view_model_service}{IBasket\+View\+Model\+Service}} basket\+Service, Sign\+In\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$ sign\+In\+Manager)
+\item 
+async Task$<$ IView\+Component\+Result $>$ \mbox{\hyperlink{class_basket_ac9358eb970c2eafe0d299a04e83fd938}{Invoke\+Async}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_basket_ab34c3ca9b33352d9460ac3de30d4d8f8}{Buyer\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IRead\+Only\+Collection$<$ \mbox{\hyperlink{class_basket_item}{Basket\+Item}} $>$ \mbox{\hyperlink{class_basket_ae1f7e7d02c51c6fde1a52780d09185ab}{Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_basket_ab62951438fec623020f6302c5b72a6b3}{Total\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_basket_ab4faf946600ad9bf2413c7c2d9ddf735}\label{class_basket_ab4faf946600ad9bf2413c7c2d9ddf735}} 
+\index{Basket@{Basket}!Basket@{Basket}}
+\index{Basket@{Basket}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{Basket()}{Basket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Basket.\+Basket (\begin{DoxyParamCaption}\item[{string}]{buyer\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_basket_adb79400de43f63003e37aad7aa60bd88}\label{class_basket_adb79400de43f63003e37aad7aa60bd88}} 
+\index{Basket@{Basket}!Basket@{Basket}}
+\index{Basket@{Basket}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{Basket()}{Basket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Basket.\+Basket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_basket_view_model_service}{IBasket\+View\+Model\+Service}}}]{basket\+Service,  }\item[{Sign\+In\+Manager$<$ \mbox{\hyperlink{class_application_user}{Application\+User}} $>$}]{sign\+In\+Manager }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_basket_a0b56e8900c9c05d0322772b82ad667e2}\label{class_basket_a0b56e8900c9c05d0322772b82ad667e2}} 
+\index{Basket@{Basket}!AddItem@{AddItem}}
+\index{AddItem@{AddItem}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{AddItem()}{AddItem()}}
+{\footnotesize\ttfamily void Basket.\+Add\+Item (\begin{DoxyParamCaption}\item[{int}]{catalog\+Item\+Id,  }\item[{decimal}]{unit\+Price,  }\item[{int}]{quantity = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_basket_ac9358eb970c2eafe0d299a04e83fd938}\label{class_basket_ac9358eb970c2eafe0d299a04e83fd938}} 
+\index{Basket@{Basket}!InvokeAsync@{InvokeAsync}}
+\index{InvokeAsync@{InvokeAsync}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{InvokeAsync()}{InvokeAsync()}}
+{\footnotesize\ttfamily async Task$<$IView\+Component\+Result$>$ Basket.\+Invoke\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_basket_af4f0e559cba727d3fb966fbd090ca6cc}\label{class_basket_af4f0e559cba727d3fb966fbd090ca6cc}} 
+\index{Basket@{Basket}!RemoveEmptyItems@{RemoveEmptyItems}}
+\index{RemoveEmptyItems@{RemoveEmptyItems}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{RemoveEmptyItems()}{RemoveEmptyItems()}}
+{\footnotesize\ttfamily void Basket.\+Remove\+Empty\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_basket_af0a81a2a34ec8c96bae55c76f88803a0}\label{class_basket_af0a81a2a34ec8c96bae55c76f88803a0}} 
+\index{Basket@{Basket}!SetNewBuyerId@{SetNewBuyerId}}
+\index{SetNewBuyerId@{SetNewBuyerId}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{SetNewBuyerId()}{SetNewBuyerId()}}
+{\footnotesize\ttfamily void Basket.\+Set\+New\+Buyer\+Id (\begin{DoxyParamCaption}\item[{string}]{buyer\+Id }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_basket_ab34c3ca9b33352d9460ac3de30d4d8f8}\label{class_basket_ab34c3ca9b33352d9460ac3de30d4d8f8}} 
+\index{Basket@{Basket}!BuyerId@{BuyerId}}
+\index{BuyerId@{BuyerId}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{BuyerId}{BuyerId}}
+{\footnotesize\ttfamily string Basket.\+Buyer\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_basket_ae1f7e7d02c51c6fde1a52780d09185ab}\label{class_basket_ae1f7e7d02c51c6fde1a52780d09185ab}} 
+\index{Basket@{Basket}!Items@{Items}}
+\index{Items@{Items}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{Items}{Items}}
+{\footnotesize\ttfamily IRead\+Only\+Collection$<$\mbox{\hyperlink{class_basket_item}{Basket\+Item}}$>$ Basket.\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_basket_ab62951438fec623020f6302c5b72a6b3}\label{class_basket_ab62951438fec623020f6302c5b72a6b3}} 
+\index{Basket@{Basket}!TotalItems@{TotalItems}}
+\index{TotalItems@{TotalItems}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{TotalItems}{TotalItems}}
+{\footnotesize\ttfamily int Basket.\+Total\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Application\+Core/\+Entities/\+Basket\+Aggregate/\mbox{\hyperlink{_application_core_2_entities_2_basket_aggregate_2_basket_8cs}{Basket.\+cs}}\end{DoxyCompactItemize}

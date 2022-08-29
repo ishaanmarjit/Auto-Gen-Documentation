@@ -1,0 +1,102 @@
+\hypertarget{class_cached_catalog_item_service_decorator}{}\doxysection{Cached\+Catalog\+Item\+Service\+Decorator Class Reference}
+\label{class_cached_catalog_item_service_decorator}\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+Inheritance diagram for Cached\+Catalog\+Item\+Service\+Decorator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cached_catalog_item_service_decorator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cached_catalog_item_service_decorator_a8821c7c6c5ea1405fca917f71904ef57}{Cached\+Catalog\+Item\+Service\+Decorator}} (ILocal\+Storage\+Service local\+Storage\+Service, \mbox{\hyperlink{class_catalog_item_service}{Catalog\+Item\+Service}} catalog\+Item\+Service, ILogger$<$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator}{Cached\+Catalog\+Item\+Service\+Decorator}} $>$ logger)
+\item 
+async Task$<$ \mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} $>$ $>$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator_a3fb061109b0f1066c8f9220c7e4f78ca}{List\+Paged}} (int page\+Size)
+\item 
+async Task$<$ \mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} $>$ $>$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator_ad08e44baff5cb28159097a4570c754ab}{List}} ()
+\item 
+async Task$<$ \mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} $>$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator_aa09dae87a45ff3a0f167f1a39eb393a6}{Get\+By\+Id}} (int id)
+\item 
+async Task$<$ \mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} $>$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator_a2348ec1bb803bdd254247fc70221ac5b}{Create}} (\mbox{\hyperlink{class_create_catalog_item_request}{Create\+Catalog\+Item\+Request}} catalog\+Item)
+\item 
+async Task$<$ \mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} $>$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator_aa95f79d9ba34841e9e4f14cd40e8d4da}{Edit}} (\mbox{\hyperlink{class_catalog_item}{Catalog\+Item}} catalog\+Item)
+\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator_a5dd824b3404d87bfb8837a8bedf4626b}{Delete}} (int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cached_catalog_item_service_decorator_a8821c7c6c5ea1405fca917f71904ef57}\label{class_cached_catalog_item_service_decorator_a8821c7c6c5ea1405fca917f71904ef57}} 
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\doxysubsubsection{\texorpdfstring{CachedCatalogItemServiceDecorator()}{CachedCatalogItemServiceDecorator()}}
+{\footnotesize\ttfamily Cached\+Catalog\+Item\+Service\+Decorator.\+Cached\+Catalog\+Item\+Service\+Decorator (\begin{DoxyParamCaption}\item[{ILocal\+Storage\+Service}]{local\+Storage\+Service,  }\item[{\mbox{\hyperlink{class_catalog_item_service}{Catalog\+Item\+Service}}}]{catalog\+Item\+Service,  }\item[{ILogger$<$ \mbox{\hyperlink{class_cached_catalog_item_service_decorator}{Cached\+Catalog\+Item\+Service\+Decorator}} $>$}]{logger }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cached_catalog_item_service_decorator_a2348ec1bb803bdd254247fc70221ac5b}\label{class_cached_catalog_item_service_decorator_a2348ec1bb803bdd254247fc70221ac5b}} 
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!Create@{Create}}
+\index{Create@{Create}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_catalog_item}{Catalog\+Item}}$>$ Cached\+Catalog\+Item\+Service\+Decorator.\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_create_catalog_item_request}{Create\+Catalog\+Item\+Request}}}]{catalog\+Item }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_item_service_a9bdcdabe4d2d881417b2074227c454fc}{ICatalog\+Item\+Service}}.
+
+\mbox{\Hypertarget{class_cached_catalog_item_service_decorator_a5dd824b3404d87bfb8837a8bedf4626b}\label{class_cached_catalog_item_service_decorator_a5dd824b3404d87bfb8837a8bedf4626b}} 
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!Delete@{Delete}}
+\index{Delete@{Delete}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$string$>$ Cached\+Catalog\+Item\+Service\+Decorator.\+Delete (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_item_service_a7871fbbffd3770befeb3021755cafb14}{ICatalog\+Item\+Service}}.
+
+\mbox{\Hypertarget{class_cached_catalog_item_service_decorator_aa95f79d9ba34841e9e4f14cd40e8d4da}\label{class_cached_catalog_item_service_decorator_aa95f79d9ba34841e9e4f14cd40e8d4da}} 
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!Edit@{Edit}}
+\index{Edit@{Edit}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_catalog_item}{Catalog\+Item}}$>$ Cached\+Catalog\+Item\+Service\+Decorator.\+Edit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_catalog_item}{Catalog\+Item}}}]{catalog\+Item }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_item_service_ad09f28ed376747e802aec2a2b34ce1ea}{ICatalog\+Item\+Service}}.
+
+\mbox{\Hypertarget{class_cached_catalog_item_service_decorator_aa09dae87a45ff3a0f167f1a39eb393a6}\label{class_cached_catalog_item_service_decorator_aa09dae87a45ff3a0f167f1a39eb393a6}} 
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!GetById@{GetById}}
+\index{GetById@{GetById}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\doxysubsubsection{\texorpdfstring{GetById()}{GetById()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_catalog_item}{Catalog\+Item}}$>$ Cached\+Catalog\+Item\+Service\+Decorator.\+Get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_item_service_ad267027d7f76b0eb210922cdf69cc15a}{ICatalog\+Item\+Service}}.
+
+\mbox{\Hypertarget{class_cached_catalog_item_service_decorator_ad08e44baff5cb28159097a4570c754ab}\label{class_cached_catalog_item_service_decorator_ad08e44baff5cb28159097a4570c754ab}} 
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!List@{List}}
+\index{List@{List}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_list}{List}}$<$\mbox{\hyperlink{class_catalog_item}{Catalog\+Item}}$>$ $>$ Cached\+Catalog\+Item\+Service\+Decorator.\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_item_service_ac398605a92aa984f00635b1ac434ca2d}{ICatalog\+Item\+Service}}.
+
+\mbox{\Hypertarget{class_cached_catalog_item_service_decorator_a3fb061109b0f1066c8f9220c7e4f78ca}\label{class_cached_catalog_item_service_decorator_a3fb061109b0f1066c8f9220c7e4f78ca}} 
+\index{CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}!ListPaged@{ListPaged}}
+\index{ListPaged@{ListPaged}!CachedCatalogItemServiceDecorator@{CachedCatalogItemServiceDecorator}}
+\doxysubsubsection{\texorpdfstring{ListPaged()}{ListPaged()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_list}{List}}$<$\mbox{\hyperlink{class_catalog_item}{Catalog\+Item}}$>$ $>$ Cached\+Catalog\+Item\+Service\+Decorator.\+List\+Paged (\begin{DoxyParamCaption}\item[{int}]{page\+Size }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_catalog_item_service_a6107190f4e77dd0d3bffd6792cf8b985}{ICatalog\+Item\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Blazor\+Admin/\+Services/\mbox{\hyperlink{_cached_catalog_item_service_decorator_8cs}{Cached\+Catalog\+Item\+Service\+Decorator.\+cs}}\end{DoxyCompactItemize}

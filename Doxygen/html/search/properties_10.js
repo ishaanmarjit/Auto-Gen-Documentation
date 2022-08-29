@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['testbuyerid_1800',['TestBuyerId',['../class_order_builder.html#aed6d8f8f524f86fe049c2540cd59d6a9',1,'OrderBuilder']]],
+  ['testcatalogitemid_1801',['TestCatalogItemId',['../class_order_builder.html#a22adea19f341917ce11a408cac78852e',1,'OrderBuilder']]],
+  ['testcatalogitemordered_1802',['TestCatalogItemOrdered',['../class_order_builder.html#a8d510afb9af7dd837680d5c94b119860',1,'OrderBuilder']]],
+  ['testcity_1803',['TestCity',['../class_address_builder.html#a70091dccdfe152e6af0d175fc8114b99',1,'AddressBuilder']]],
+  ['testcountry_1804',['TestCountry',['../class_address_builder.html#a17dc6131817427fa90eba22b8f680190',1,'AddressBuilder']]],
+  ['testpictureuri_1805',['TestPictureUri',['../class_order_builder.html#ac4dce6c8ae7875e6d5ee13ae51dd7852',1,'OrderBuilder']]],
+  ['testproductname_1806',['TestProductName',['../class_order_builder.html#a476dcc063d0b84ae0f845515a7e4bd94',1,'OrderBuilder']]],
+  ['teststate_1807',['TestState',['../class_address_builder.html#a32af61e83068c6271e9fbff3cb56a53f',1,'AddressBuilder']]],
+  ['teststreet_1808',['TestStreet',['../class_address_builder.html#ae2a198cd4787563b0979f13527408280',1,'AddressBuilder']]],
+  ['testzipcode_1809',['TestZipCode',['../class_address_builder.html#acf3c4b0baf2f4af32192e6270937a514',1,'AddressBuilder']]],
+  ['token_1810',['Token',['../class_user_info.html#a84d59e5e68ed95867eceb8a700d58ed8',1,'UserInfo.Token()'],['../class_authenticate_response.html#aa592f02de0661f842d5cb3258fe53dab',1,'AuthenticateResponse.Token()']]],
+  ['total_1811',['Total',['../class_order_view_model.html#a7eb12dd654e36e6a357fbd523e319a8b',1,'OrderViewModel']]],
+  ['totalitems_1812',['TotalItems',['../class_basket.html#ab62951438fec623020f6302c5b72a6b3',1,'Basket.TotalItems()'],['../class_pagination_info_view_model.html#a61b1db58c929f6fbaf213c6a0cb45d8e',1,'PaginationInfoViewModel.TotalItems()']]],
+  ['totalpages_1813',['TotalPages',['../class_pagination_info_view_model.html#a074ccf9b35b707616df78608387f15cb',1,'PaginationInfoViewModel']]],
+  ['twofactorcode_1814',['TwoFactorCode',['../class_login_with2fa_view_model.html#ace97743a7aef94b54c2a135baec7edfc',1,'LoginWith2faViewModel']]],
+  ['type_1815',['Type',['../class_catalog_type.html#a9873e070776fc5978a215e28a51ada1d',1,'CatalogType.Type()'],['../class_claim_value.html#a90215710c5e670aa55ebb971b8a402b3',1,'ClaimValue.Type()'],['../class_file_item.html#a3482f7aad2be709e413c6b0b7b83fc97',1,'FileItem.Type()']]],
+  ['types_1816',['Types',['../class_catalog_index_view_model.html#a4f899c3516c5c7e17dfbbafe9cb144f6',1,'CatalogIndexViewModel']]],
+  ['typesfilterapplied_1817',['TypesFilterApplied',['../class_catalog_index_view_model.html#a94dc5f4d52fcd3dc6cb1c3986fd723d4',1,'CatalogIndexViewModel']]]
+];

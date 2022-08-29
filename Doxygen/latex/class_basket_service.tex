@@ -1,0 +1,78 @@
+\hypertarget{class_basket_service}{}\doxysection{Basket\+Service Class Reference}
+\label{class_basket_service}\index{BasketService@{BasketService}}
+Inheritance diagram for Basket\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_basket_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_basket_service_a702db1a7d8c4e6e8edf034d96cf568fb}{Basket\+Service}} (\mbox{\hyperlink{interface_i_repository}{IRepository}}$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$ basket\+Repository, \mbox{\hyperlink{interface_i_app_logger}{IApp\+Logger}}$<$ \mbox{\hyperlink{class_basket_service}{Basket\+Service}} $>$ logger)
+\item 
+async Task$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$ \mbox{\hyperlink{class_basket_service_a80ac3ce0c59d81fdb579c7e4025a0f4e}{Add\+Item\+To\+Basket}} (string username, int catalog\+Item\+Id, decimal price, int quantity=1)
+\item 
+async Task \mbox{\hyperlink{class_basket_service_a194dd6102debf7ac3a8446c18aa576bd}{Delete\+Basket\+Async}} (int basket\+Id)
+\item 
+async Task$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$ \mbox{\hyperlink{class_basket_service_a643f14974c38902325a849d551238a75}{Set\+Quantities}} (int basket\+Id, Dictionary$<$ string, int $>$ quantities)
+\item 
+async Task \mbox{\hyperlink{class_basket_service_ad0a2dac66dd1b13dcc5185d2e2a47d96}{Transfer\+Basket\+Async}} (string anonymous\+Id, string user\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_basket_service_a702db1a7d8c4e6e8edf034d96cf568fb}\label{class_basket_service_a702db1a7d8c4e6e8edf034d96cf568fb}} 
+\index{BasketService@{BasketService}!BasketService@{BasketService}}
+\index{BasketService@{BasketService}!BasketService@{BasketService}}
+\doxysubsubsection{\texorpdfstring{BasketService()}{BasketService()}}
+{\footnotesize\ttfamily Basket\+Service.\+Basket\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_repository}{IRepository}}$<$ \mbox{\hyperlink{class_basket}{Basket}} $>$}]{basket\+Repository,  }\item[{\mbox{\hyperlink{interface_i_app_logger}{IApp\+Logger}}$<$ \mbox{\hyperlink{class_basket_service}{Basket\+Service}} $>$}]{logger }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_basket_service_a80ac3ce0c59d81fdb579c7e4025a0f4e}\label{class_basket_service_a80ac3ce0c59d81fdb579c7e4025a0f4e}} 
+\index{BasketService@{BasketService}!AddItemToBasket@{AddItemToBasket}}
+\index{AddItemToBasket@{AddItemToBasket}!BasketService@{BasketService}}
+\doxysubsubsection{\texorpdfstring{AddItemToBasket()}{AddItemToBasket()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_basket}{Basket}}$>$ Basket\+Service.\+Add\+Item\+To\+Basket (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{int}]{catalog\+Item\+Id,  }\item[{decimal}]{price,  }\item[{int}]{quantity = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_basket_service_a575361b5bc8706b4a695089e17cf7619}{IBasket\+Service}}.
+
+\mbox{\Hypertarget{class_basket_service_a194dd6102debf7ac3a8446c18aa576bd}\label{class_basket_service_a194dd6102debf7ac3a8446c18aa576bd}} 
+\index{BasketService@{BasketService}!DeleteBasketAsync@{DeleteBasketAsync}}
+\index{DeleteBasketAsync@{DeleteBasketAsync}!BasketService@{BasketService}}
+\doxysubsubsection{\texorpdfstring{DeleteBasketAsync()}{DeleteBasketAsync()}}
+{\footnotesize\ttfamily async Task Basket\+Service.\+Delete\+Basket\+Async (\begin{DoxyParamCaption}\item[{int}]{basket\+Id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_basket_service_a72774ed3c9a2f8d141395727bbd1bb00}{IBasket\+Service}}.
+
+\mbox{\Hypertarget{class_basket_service_a643f14974c38902325a849d551238a75}\label{class_basket_service_a643f14974c38902325a849d551238a75}} 
+\index{BasketService@{BasketService}!SetQuantities@{SetQuantities}}
+\index{SetQuantities@{SetQuantities}!BasketService@{BasketService}}
+\doxysubsubsection{\texorpdfstring{SetQuantities()}{SetQuantities()}}
+{\footnotesize\ttfamily async Task$<$\mbox{\hyperlink{class_basket}{Basket}}$>$ Basket\+Service.\+Set\+Quantities (\begin{DoxyParamCaption}\item[{int}]{basket\+Id,  }\item[{Dictionary$<$ string, int $>$}]{quantities }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_basket_service_ae182aa63c93f63f2d66c2c8df74b022d}{IBasket\+Service}}.
+
+\mbox{\Hypertarget{class_basket_service_ad0a2dac66dd1b13dcc5185d2e2a47d96}\label{class_basket_service_ad0a2dac66dd1b13dcc5185d2e2a47d96}} 
+\index{BasketService@{BasketService}!TransferBasketAsync@{TransferBasketAsync}}
+\index{TransferBasketAsync@{TransferBasketAsync}!BasketService@{BasketService}}
+\doxysubsubsection{\texorpdfstring{TransferBasketAsync()}{TransferBasketAsync()}}
+{\footnotesize\ttfamily async Task Basket\+Service.\+Transfer\+Basket\+Async (\begin{DoxyParamCaption}\item[{string}]{anonymous\+Id,  }\item[{string}]{user\+Name }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_i_basket_service_a818b963d30df9fe2fd3a149d38c8bb03}{IBasket\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ishaan\+\_\+marjit/\+Desktop/\+Maverick/\+Dev Prod/e\+Shop\+On\+Web/src/\+Application\+Core/\+Services/\mbox{\hyperlink{_basket_service_8cs}{Basket\+Service.\+cs}}\end{DoxyCompactItemize}
